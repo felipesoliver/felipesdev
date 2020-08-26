@@ -5,18 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felipe Oliveira | Desenvolvedor Front End</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        
+    <header>
+        <div class="container" id="firstSection">
+            <nav class="navigationMenu">
+                <div class="brandMark">
+                    <a href="#firstSection"><h1>Felipe <span>Oliveira</span></h1></a>
+                </div>
+                <ul class="pageList">
+                    <li class="listItens"><a href="#secoundSection">About me</a></li>
+                    <li class="listItens"><a href="#thirdSection">Portfolio</a></li>
+                    <li class="listItens"><a href="#fourthSection">Skills</a></li>
+                    <li class="listItens"><a href="#">Get in touch</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <section class="aboutMe" id="secoundSection">
+            <div class="aboutMeText" data-animation="right">
+                <div class="aboutMeTitle">
+                    <h2>< Front End Developer ></h2>
+                </div>
+                <div class="aboutMePhrase">
+                    <p>Coder who focuses on writing clean, semantics and efficient code.</p>
+                </div>
+            </div>
+            <div class="aboutMeFrame">
+                <img src="imagens/frame.svg" alt="front end frame SVG">
+            </div>
+        </section>
         
+        <section class="portfolio" id="thirdSection">
+            <h2 data-animation="bottom">Some Of My Last Work</h3>
+            <div class="viewCard">
+                <p data-animation="left">Web app developed for a photographic professional portfolio</p>
+                <hr data-animation="bottom">
+                <img src="imagens/fsoliveira.png" alt="Cut of the index page from www.fsoliveira.com" data-animation="right">
+            </div>  
+        </section>
+
+        <section class="skills" id="fourthSection">
+            <div class="skillText" data-animation="left">
+                <h2>Skills with the following technologies: </h2>
+            </div>
+            <hr class="skillLine" data-animation="bottom">
+            <ul class="skillBoard">
+                <li class="skillCard" data-animation="bottom">
+                    <img src="imagens/html.svg" alt="HTML icon">
+                    <hr class="hr1">
+                    <p>80%</p>
+                </li>
+                <li class="skillCard" data-animation="bottom">
+                    <img src="imagens/css.svg" alt="CSS icon">
+                    <hr class="hr2">
+                    <p>80%</p>
+                </li>
+                <li class="skillCard" data-animation="bottom">
+                    <img src="imagens/javascript.svg" alt="JavaScript icon">
+                    <hr class="hr3">
+                    <p>60%</p>
+                </li>
+                <li class="skillCard" data-animation="bottom">
+                    <img src="imagens/sass.svg" alt="Sass icon">
+                    <hr class="hr4">
+                    <p>65%</p>
+                </li>
+                <li class="skillCard" data-animation="bottom">
+                    <img src="imagens/bootstrap.svg" alt="Bootstrap icon">
+                    <hr class="hr5">
+                    <p>70%</p>
+                </li>
+                <li class="skillCard" data-animation="bottom">
+                    <img src="imagens/angular.svg" alt="Angular icon">
+                    <hr class="hr6">
+                    <p>50%</p>
+                </li>
+                <li class="skillCard" data-animation="bottom">
+                    <img src="imagens/react.svg" alt="React icon">
+                    <hr class="hr7">
+                    <p>45%</p>
+                </li>
+                <li class="skillCard" data-animation="bottom">
+                    <img src="imagens/git.svg" alt="Git icon">
+                    <hr class="hr8">
+                    <p>75%</p>
+                </li>
+                <li class="skillCard" data-animation="bottom">
+                    <img src="imagens/github.svg" alt="GitHub icon">
+                    <hr class="hr9">
+                    <p>70%</p>
+                </li>
+            </ul> 
+        </section>
     </main>
 
     <footer>
 
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

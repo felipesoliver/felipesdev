@@ -1,0 +1,354 @@
+/* PAGE TRANSITION */
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* SCROLL ANIMATION */
+
+[data-animation] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-animation="left"]{
+    transform: translate3d(-50px,0,0);
+}
+
+[data-animation="right"]{
+    transform: translate3d(50px,0,0);
+}
+
+[data-animation="bottom"]{
+    transform: translate3d(0,50px,0);
+}
+
+[data-animation].animate {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION MANU */
+
+.container {
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+.navigationMenu {
+    width: 100%;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 0.5px #92e9ab;
+    background: rgb(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.brandMark {
+    padding: 0 0 0 120px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.brandMark a {
+    text-decoration: none;
+    color: #000;
+}
+
+.brandMark h1 {
+    font-weight: 200;
+}
+
+.brandMark span {
+    font-weight: 600;
+    background: -webkit-linear-gradient(left, #3a3a3a, #7a7a7a, #b6b6b6, #696969);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pageList {
+    width: 30%;
+    padding: 0 130px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listItens a{
+    font-size: 0.85em;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.listItens a:hover {
+    color: #9e9e9e;
+}
+
+/* ABOUT ME SECTION */
+
+.aboutMe {
+    margin: 0 auto;
+    width: 95%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeText {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    color: #5c5c5c;
+}
+
+.aboutMeTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeTitle h2 {
+    font-size: 2em;
+    font-weight: 600;
+    background: -webkit-linear-gradient(left, #3a3a3a, #b6b6b6, #7a7a7a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 0 30px 0;
+    text-transform: uppercase;
+}
+
+.aboutMePhrase {
+    width: 60%;
+    padding: 0 0 0 30px;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+.aboutMeFrame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+}
+
+.aboutMeFrame img {
+    width: 80%;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio {
+    margin: 0 auto;
+    width: 97%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: linear-gradient(to top, #fff, #8ce2a4, #52b16d 130%);
+    box-shadow: 0px 20px 28px -2px rgba(120,120,120,0.85);
+    border-radius: 10px;
+}
+
+.portfolio h2 {
+    margin: 100px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+}
+
+.viewCard {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.viewCard hr {
+    margin: 0 50px;
+    width: 2px;
+    height: 250px;
+    border: none;
+    background: #81ce97;
+}
+
+.viewCard p {
+    width: 50%;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: right;
+    line-height: 1.5em;
+    background: -webkit-linear-gradient(45deg, #568865, #52b16d, #b3b3b3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.viewCard img {
+    width: 50%;
+    opacity: 0;
+    box-shadow: 14px 13px 34px 0px rgba(92,91,92,1);
+    border-radius: 10px;
+}
+
+.viewCard img:hover {
+    opacity: .8;
+    filter: blur(5px);
+}
+
+/* SKILLS SECTION */
+
+.skills {
+    width: 70%;
+    margin: 150px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillLine {
+    margin: 0 50px;
+    width: 2px;
+    height: 300px;
+    border: none;
+    background: #81ce97;
+}
+
+.skillText {
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.skillText h2 {
+    padding: 20px 0;
+    width: 70%;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: right;
+    background: -webkit-linear-gradient(45deg, #568865, #52b16d, #b3b3b3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skillBoard {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skillCard {
+    margin: 0 0 25px 0;
+    width: 30%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, #fff, #fff, #93f3eb 130%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 0px rgba(189,189,189,1);
+    font-family: 'Open Sans', sans-serif;
+    color: #568865;
+}
+
+.skillCard img {
+    width: 50%;
+}
+
+.skillCard .hr1 {
+    width: 70%;
+    height: 5px;
+    border: none;
+    background: linear-gradient(to right, #7ed396, #dbdbdb);
+}
+
+.skillCard .hr2 {
+    width: 70%;
+    height: 5px;
+    border: none;
+    background: linear-gradient(to right, #7ed396, #dbdbdb);
+}
+
+.skillCard .hr3 {
+    width: 50%;
+    height: 5px;
+    border: none;
+    background: linear-gradient(to right, #7ed396, #dbdbdb);
+}
+
+.skillCard .hr4 {
+    width: 55%;
+    height: 5px;
+    border: none;
+    background: linear-gradient(to right, #7ed396, #dbdbdb);
+}
+
+.skillCard .hr5 {
+    width: 60%;
+    height: 5px;
+    border: none;
+    background: linear-gradient(to right, #7ed396, #dbdbdb);
+}
+
+.skillCard .hr6 {
+    width: 40%;
+    height: 5px;
+    border: none;
+    background: linear-gradient(to right, #7ed396, #dbdbdb);
+}
+
+.skillCard .hr7 {
+    width: 35%;
+    height: 5px;
+    border: none;
+    background: linear-gradient(to right, #7ed396, #dbdbdb);
+}
+
+.skillCard .hr8 {
+    width: 65%;
+    height: 5px;
+    border: none;
+    background: linear-gradient(to right, #7ed396, #dbdbdb);
+}
+
+.skillCard .hr9 {
+    width: 60%;
+    height: 5px;
+    border: none;
+    background: linear-gradient(to right, #7ed396, #dbdbdb);
+}
