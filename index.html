@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Oliveira | Desenvolvedor Front End</title>
+    <title>Felipe Oliveira | Front End Developer</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
                     <li class="listItens"><a href="#secoundSection">About me</a></li>
                     <li class="listItens"><a href="#thirdSection">Portfolio</a></li>
                     <li class="listItens"><a href="#fourthSection">Skills</a></li>
-                    <li class="listItens"><a href="#">Get in touch</a></li>
+                    <li class="listItens"><a href="#fifthSection">Get in touch</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,7 +27,31 @@
 
     <main>
         <section class="aboutMe" id="secoundSection">
-            <div class="aboutMeText" data-animation="right">
+            <div class="aboutMeProfile" data-animation="left">
+                <div class="socialMedia" data-animation="top">
+                    <ul class="socialMediaList">
+                        <li class="sMButton sMButton1">
+                            <img class="sMImg1" src="images/whatsapp.svg" alt="WhatsApp logo">
+                        </li>
+                        <li class="sMButton sMButton2">
+                            <a href="https://www.linkedin.com/in/fsoliver" target="blank"><img class="sMImg2" src="images/linkedin.svg" alt="LinkedIn logo"></a>
+                        </li>
+                        <li class="sMButton sMButton3">
+                            <a href="https://github.com/felipesoliver" target="blank"><img class="sMImg3" src="images/github1.svg" alt="GitHub logo"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="aboutMePic">
+                    <div class="spinner"></div>
+                    <div class="img">
+                        <img src="images/profilepic.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="info">
+                        <span>26 years old</span>
+                        <hr>
+                        <span>Living in São Paulo</span>
+                    </div>
+                </div>
                 <div class="aboutMeTitle">
                     <h2>< Front End Developer ></h2>
                 </div>
@@ -36,17 +60,21 @@
                 </div>
             </div>
             <div class="aboutMeFrame">
-                <img src="imagens/frame.svg" alt="front end frame SVG">
+                <img src="images/frame.svg" alt="front end frame SVG">
             </div>
         </section>
         
         <section class="portfolio" id="thirdSection">
             <h2 data-animation="bottom">Some Of My Last Work</h3>
             <div class="viewCard">
-                <p data-animation="left">Web app developed for a photographic professional portfolio</p>
+                <p data-animation="left">Web app developed for my photographic professional portfolio</p>
                 <hr data-animation="bottom">
-                <img src="imagens/fsoliveira.png" alt="Cut of the index page from www.fsoliveira.com" data-animation="right">
-            </div>  
+                <a href="#" target="blank" data-animation="right"><img src="images/fsoliveira.png" alt="Cut of the index page from www.fsoliveira.com"></a>
+            </div>
+            <div class="resumeArea" data-animation="inFront">
+                <a href="https://drive.google.com/u/1/uc?id=1JsUERXy3GwOVtnX9Mj8g9YqlUKFsd1uv&export=download" class="resumeLink" target="blank">Download my Resumé</a>
+                <img src="images/resume_icon.svg" alt="Resumé Icon">
+            </div>
         </section>
 
         <section class="skills" id="fourthSection">
@@ -56,56 +84,75 @@
             <hr class="skillLine" data-animation="bottom">
             <ul class="skillBoard">
                 <li class="skillCard" data-animation="bottom">
-                    <img src="imagens/html.svg" alt="HTML icon">
-                    <hr class="hr1">
+                    <img src="images/html.svg" alt="HTML icon">
+                    <hr class="progressBar pBar1">
                     <p>80%</p>
                 </li>
                 <li class="skillCard" data-animation="bottom">
-                    <img src="imagens/css.svg" alt="CSS icon">
-                    <hr class="hr2">
+                    <img src="images/css.svg" alt="CSS icon">
+                    <hr class="progressBar pBar2">
                     <p>80%</p>
                 </li>
                 <li class="skillCard" data-animation="bottom">
-                    <img src="imagens/javascript.svg" alt="JavaScript icon">
-                    <hr class="hr3">
+                    <img src="images/javascript.svg" alt="JavaScript icon">
+                    <hr class="progressBar pBar3">
                     <p>60%</p>
                 </li>
                 <li class="skillCard" data-animation="bottom">
-                    <img src="imagens/sass.svg" alt="Sass icon">
-                    <hr class="hr4">
+                    <img src="images/sass.svg" alt="Sass icon">
+                    <hr class="progressBar pBar4">
                     <p>65%</p>
                 </li>
                 <li class="skillCard" data-animation="bottom">
-                    <img src="imagens/bootstrap.svg" alt="Bootstrap icon">
-                    <hr class="hr5">
+                    <img src="images/bootstrap.svg" alt="Bootstrap icon">
+                    <hr class="progressBar pBar5">
                     <p>70%</p>
                 </li>
                 <li class="skillCard" data-animation="bottom">
-                    <img src="imagens/angular.svg" alt="Angular icon">
-                    <hr class="hr6">
+                    <img src="images/angular.svg" alt="Angular icon">
+                    <hr class="progressBar pBar6">
                     <p>50%</p>
                 </li>
                 <li class="skillCard" data-animation="bottom">
-                    <img src="imagens/react.svg" alt="React icon">
-                    <hr class="hr7">
+                    <img src="images/react.svg" alt="React icon">
+                    <hr class="progressBar pBar7">
                     <p>45%</p>
                 </li>
                 <li class="skillCard" data-animation="bottom">
-                    <img src="imagens/git.svg" alt="Git icon">
-                    <hr class="hr8">
+                    <img src="images/git.svg" alt="Git icon">
+                    <hr class="progressBar pBar8">
                     <p>75%</p>
                 </li>
                 <li class="skillCard" data-animation="bottom">
-                    <img src="imagens/github.svg" alt="GitHub icon">
-                    <hr class="hr9">
+                    <img src="images/github.svg" alt="GitHub icon">
+                    <hr class="progressBar pBar9">
                     <p>70%</p>
                 </li>
-            </ul> 
+            </ul>     
+        </section>
+
+        <section class="contact" id="fifthSection">
+            <div class="contactText" data-animation="left">
+                <h2>Let's Talk?</h2>
+                <p>
+                    Did you get interested about my job? You can get in touch with me filling the form bellow:
+                </p>
+            </div>
+            <div class="containerForm">
+                <form class="contactForm" data-animation="right">
+                    <input type="text" class="inputType1" placeholder="First Name">
+                    <input type="text" class="inputType1" placeholder="Last Name">
+                    <input type="text" class="inputType2" placeholder="Subject">
+                    <input type="email" class="inputType2" placeholder="E-mail">
+                    <textarea class="inputType2" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button class="sendButton" type="submit">Submit</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <p class="copyright">&#169; Felipe Oliveira - 2020</p>
     </footer>
 
     <script src="js/script.js"></script>
