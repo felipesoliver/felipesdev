@@ -1,15 +1,19 @@
+/* SHOW / HIDE MENU ANIMATION 
+
 let fadeNavBar = window.pageYOffset;
 
 window.onscroll = function() {
     let showNavBar = window.pageYOffset;
     if(fadeNavBar > showNavBar){
-        document.querySelector(".navigationMenu").style.opacity = "1";
-        document.querySelector(".navigationMenu").style.transition = "all 0.6s ease-in-out";
+        document.querySelector(".container").style.opacity = "1";
+        document.querySelector(".container").style.transition = "all 0.6s ease-in-out";
     }else{
-        document.querySelector(".navigationMenu").style.opacity = "0";
+        document.querySelector(".container").style.opacity = "0";
     }
     fadeNavBar = showNavBar;
-}
+}*/
+
+/* SCROLL ANIMATION */
 
 const debounce = function(func, wait, immediate) {
 	let timeout;
@@ -47,3 +51,17 @@ if(target.length) {
         animeScroll();
     },01));
 }  
+
+/* BURGER MENU ANIMATION */
+
+let menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+    if(!menuOpen) {
+        menuBtn.classList.add('open');
+        menuBtn = true;
+    } else {
+        menuBtn.classList.remove('open');
+        menuBtn = false;
+    }
+});

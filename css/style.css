@@ -83,29 +83,27 @@ html {
 /* NAVIGATION MANU */
 
 .container {
+    width: 100%;
     height: 4em;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     color: #000;
+    background-color: #fff;
+    border-bottom: solid 2px #a7f0bc;
 }
 
 .navigationMenu {
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
     height: 4em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: solid 2px #a7f0bc;
-    background-color: rgba(255,255,255,0.7);
-    position: fixed;
-    top: 0;
-    z-index: 3;
 }
 
 .brandMark {
-    margin: 0 0 0 140px;
     font-size: 1.5em;
     text-transform: uppercase;
 }
@@ -126,9 +124,12 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
+.menu-btn {
+    display: none;
+}
+
 .pageList {
     width: 30%;
-    margin: 0 160px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -161,10 +162,6 @@ html {
     position: absolute;
     top: 13.5%;
     left: 495px;
-}
-
-.socialMediaList {
-    margin: 0 0 100px 0;
 }
 
 .sMButton {
@@ -756,8 +753,8 @@ html {
 
 .sendButton {
     margin: 0 0 50px 0;
-    padding: 10px 30px;
-    background: #9addad;
+    padding: 10px 50px;
+    background: #a7f0bc;
     font-size: 1.2em;
     font-weight: 600;
     color: #fff;
@@ -773,7 +770,7 @@ html {
 }
 
 .sendButton:hover {
-    background: #7bb9a5; 
+    background: #88d8a0; 
     -webkit-box-shadow: 0 4px 6px 0 rgba(17, 17, 19, 0.28);
     -moz-box-shadow: 0 4px 6px 0 rgba(17, 17, 19, 0.28);
     box-shadow: 0 4px 6px 0 rgba(17, 17, 19, 0.28);
@@ -781,6 +778,31 @@ html {
 
 .sendButton:active {
     outline: none;
+}
+
+.sendButton::before {
+    content: '\2794';
+    opacity: 0;
+    position: absolute;
+    top: 451px;
+    left: 126px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #fff;
+    -webkit-transform: translate3d(-30px,0,0);
+    -moz-transform: translate3d(-30px,0,0);
+    transform: translate3d(-30px,0,0); 
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;   
+}
+
+.sendButton:hover::before {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0); 
 }
 
 /* FOOTER */
@@ -799,3 +821,254 @@ html {
     -moz-box-shadow: 0px -3px 10px 1px rgb(216, 216, 216,1);
     box-shadow: 0px -3px 10px 1px rgb(216, 216, 216,1);
 }
+
+@media (max-width: 760px) {
+
+    /* SCROLL BAR */
+    
+    ::-webkit-scrollbar{
+        display: none;
+    }      
+    
+    ::-webkit-scrollbar-button{
+        display: none;
+    }       
+     
+    ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
+    /* NAVIGATION MENU */
+
+    .navigationMenu {
+        background-color: rgba(255,255,255,0);
+    }
+
+    .menu-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn__burger {
+        width: 100%;
+        height: 4px;
+        background: #8bdda2;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #8bdda2;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn__burger::before {
+        transform: translateY(-12px);
+    }
+
+    .menu-btn__burger::after {
+        transform: translateY(12px);  
+    }
+
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+    .pageList {
+        display: none;
+    }
+
+    /* ABOUT ME SECTION */
+
+    .socialMedia {
+        left: 250px;
+        display: none;
+    }
+
+    .sMButton1 {
+        display: none;
+    }
+
+    .aboutMe {
+        margin: 80px auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .aboutMeProfile {
+        margin: 0 0 50px 0;
+    }
+
+    .aboutMePic {
+        margin: 0 0 50px 0;
+        padding: 0;
+        width: 196px;
+        height: 196px;
+    }
+
+    .aboutMePic img {
+        width: 196px;
+        height: 196px;
+    }
+
+    .aboutMePic .img::after {
+        width: 196px;
+        height: 196px;
+    }
+
+    .aboutMePic .spinner {
+        width: 224px;
+        height: 224px;
+    }
+
+    .aboutMePic .info {
+        width: 196px;
+        height: 196px;
+        font-size: .7em;
+    }
+
+    .aboutMePic hr {
+        width: 140px;
+    }
+
+    .aboutMeProfile {
+        width: 95%;
+    }
+
+    .aboutMeTitle h2{
+        font-size: 1em;
+    }
+
+    .aboutMePhrase {
+        width: 95%;
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .aboutMeFrame {
+        width: 100%;
+    }
+
+    /* PORTFOLIO SECTION */
+
+    .portfolio {
+        width: 90%;
+    }
+
+    .portfolio h2 {
+        margin: 50px 0;
+        font-size: 1em;
+        font-weight: lighter;
+        letter-spacing: 3px;
+    }
+
+    .viewCard {
+        width: 90%;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .viewCard hr {
+        display: none;
+    }
+
+    .viewCard a {
+        width: 90%;
+    }
+
+    .viewCard img {
+        margin: 0 0 50px 0;
+        width: 100%;
+    }
+
+    .viewCard p {
+        width: 90%;
+        font-size: 1em;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .resumeArea {
+        margin: 50px 0;
+    }
+
+    .resumeLink {
+        margin: 0 40px 0 0;
+        font-size: .8em;
+        text-align: center;
+    }
+
+    .resumeLink::before {
+        width: 150px;
+    }
+
+    .resumeLink::after {
+        width: 150px;
+    }
+
+    .resumeArea img {
+        opacity: 1;
+        height: 42px;
+        top: 4px;
+        right: 75px;
+    }
+
+    /* SKILLS SECTION */
+
+    .skills {
+        width: 90%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .skillText {
+        width: 100%;
+        justify-content: center;
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .skillText h2 {
+        width: 80%;
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .skillLine {
+        display: none;
+    }
+
+    .skillBoard {
+        width: 90%;
+    }
+
+    .skillCard {
+        height: 100px;
+    }
+    /* CONTACT ME SECTION */
+
+    /* FOOTER */
+}   
