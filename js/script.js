@@ -1,4 +1,4 @@
-/* SHOW / HIDE MENU ANIMATION 
+/* SHOW / HIDE MENU ANIMATION */
 
 let fadeNavBar = window.pageYOffset;
 
@@ -11,7 +11,7 @@ window.onscroll = function() {
         document.querySelector(".container").style.opacity = "0";
     }
     fadeNavBar = showNavBar;
-}*/
+}
 
 /* SCROLL ANIMATION */
 
@@ -54,14 +54,14 @@ if(target.length) {
 
 /* BURGER MENU ANIMATION */
 
-let menuBtn = document.querySelector('.menu-btn');
+const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
         menuBtn.classList.add('open');
-        menuBtn = true;
+        menuOpen = true;
     } else {
         menuBtn.classList.remove('open');
-        menuBtn = false;
+        menuOpen = false;
     }
 });

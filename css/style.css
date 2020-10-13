@@ -42,9 +42,9 @@ body {
 
 [data-animation] {
     opacity: 0;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s;
+    transition: 1.2s;
 }
 
 [data-animation="left"]{
@@ -90,8 +90,12 @@ html {
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     color: #000;
-    background-color: #fff;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
     border-bottom: solid 2px #a7f0bc;
+    position: fixed;
+    top: 0;
+    z-index: 3;
 }
 
 .navigationMenu {
@@ -238,7 +242,7 @@ html {
 /* ABOUT ME SECTION */
 
 .aboutMe {
-    margin: 1.5em auto;
+    margin: 5em 0 1.5em 0;
     width: 95%;
     height: auto;
     display: flex;
@@ -405,7 +409,7 @@ html {
 
 .portfolio {
     margin: 0 auto;
-    width: 97%;
+    width: 95%;
     height: auto;
     display: flex;
     align-items: center;
@@ -513,9 +517,7 @@ html {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     font-weight: 500;
-    background: -webkit-linear-gradient(left, #3a3a3a, #b6b6b6, #7a7a7a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #7a7a7a;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all .2s ease-in-out;
@@ -537,7 +539,7 @@ html {
 }
 
 .resumeLink:hover::before {
-    width: 225px;
+    width: 192px;
 }
 
 .resumeLink::after{
@@ -554,7 +556,7 @@ html {
 }
 
 .resumeLink:hover::after {
-    width: 225px;
+    width: 192px;
 }
 
 .resumeArea img {
@@ -562,7 +564,7 @@ html {
     height: 50px;
     position: absolute;
     top: -1px;
-    right: 30px;
+    right: 55px;
     -webkit-transform: translate3d(20px,0,0);
     -moz-transform: translate3d(20px,0,0);
     transform: translate3d(20px,0,0);
@@ -581,7 +583,7 @@ html {
 /* SKILLS SECTION */
 
 .skills {
-    width: 70%;
+    width: 95%;
     margin: 150px auto;
     display: flex;
     align-items: center;
@@ -616,7 +618,8 @@ html {
 }
 
 .skillBoard {
-    width: 50%;
+    margin-right: 140px;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -824,20 +827,6 @@ html {
 
 @media (max-width: 760px) {
 
-    /* SCROLL BAR */
-    
-    ::-webkit-scrollbar{
-        display: none;
-    }      
-    
-    ::-webkit-scrollbar-button{
-        display: none;
-    }       
-     
-    ::-webkit-scrollbar-thumb {
-        display: none;
-    }
-
     /* NAVIGATION MENU */
 
     .navigationMenu {
@@ -904,16 +893,11 @@ html {
     /* ABOUT ME SECTION */
 
     .socialMedia {
-        left: 250px;
-        display: none;
-    }
-
-    .sMButton1 {
         display: none;
     }
 
     .aboutMe {
-        margin: 80px auto;
+        margin: 9em 0 .5em 0;
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -960,12 +944,13 @@ html {
 
     .aboutMeTitle h2{
         font-size: 1em;
+        letter-spacing: 3px;
     }
 
     .aboutMePhrase {
         width: 95%;
         padding: 0;
-        font-size: 1em;
+        font-size: .78em;
     }
 
     .aboutMeFrame {
@@ -1004,9 +989,16 @@ html {
         width: 100%;
     }
 
+    .viewCard a::before {
+        content: 'click to visit';
+        top: 35%;
+        opacity: 1;
+        font-size: .8em;
+    }
+
     .viewCard p {
         width: 90%;
-        font-size: 1em;
+        font-size: .78em;
         font-weight: 400;
         text-align: left;
     }
@@ -1016,29 +1008,48 @@ html {
     }
 
     .resumeLink {
-        margin: 0 40px 0 0;
+        margin: 0 35px 0 0;
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 115px;
+        height: 20px;
+        background: #a7f0bc;
         font-size: .8em;
+        font-weight: 300;
+        color: #fff;
         text-align: center;
+        line-height: 0;
+        text-transform: initial;
+        border-radius: 20px 0 0 20px;
+        -webkit-box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+        -moz-box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+        box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
     }
 
     .resumeLink::before {
-        width: 150px;
+        display: none;
     }
 
     .resumeLink::after {
-        width: 150px;
+        display: none;
     }
 
     .resumeArea img {
         opacity: 1;
-        height: 42px;
-        top: 4px;
-        right: 75px;
+        height: 36px;
+        top: 8px;
+        right: 62px;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
     }
 
     /* SKILLS SECTION */
 
     .skills {
+        margin: 50px auto;
         width: 90%;
         flex-direction: column;
         flex-wrap: wrap;
@@ -1052,9 +1063,13 @@ html {
     }
 
     .skillText h2 {
+        padding: 0 0 50px 0;
         width: 80%;
         font-size: 1em;
         text-align: left;
+        background: -webkit-linear-gradient(left, #3a3a3a, #9b9b9b, #7a7a7a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .skillLine {
@@ -1062,13 +1077,61 @@ html {
     }
 
     .skillBoard {
-        width: 90%;
+        margin-right: 0;
+        width: 95%;
     }
 
     .skillCard {
         height: 100px;
+        font-size: .8em;
     }
     /* CONTACT ME SECTION */
 
+    .contact h2 {
+        font-size: 1em;
+        margin: 0 0 50px 0;
+        padding: 0;
+    }
+
+    .contact p {
+        font-size: .78em;
+        line-height: 1.4em;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+
+    .contactForm input, textarea {
+        margin: 0 0 10px 0;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: .78em;
+    }
+
+    .inputType1 {
+        width: 48%;
+    }
+
+    .sendButton {
+        padding: 10px 30px;
+        font-size: .8em;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+    .sendButton::before {
+        display: none;
+    }
+
     /* FOOTER */
+
+    .footer {
+        width: 100%;
+        height: 100px;
+    }
+
+    .footer p {
+        font-size: .8em;
+    }
 }   
