@@ -948,6 +948,7 @@ html {
     }
 
     .aboutMeProfile {
+        margin: 0;
         width: 95%;
     }
 
@@ -963,6 +964,8 @@ html {
     }
 
     .aboutMeFrame {
+        margin: 3.5em auto;
+        padding: 0;
         width: 100%;
     }
 
@@ -1073,9 +1076,9 @@ html {
 
     .skillText h2 {
         padding: 0 0 50px 0;
-        width: 80%;
+        width: 95%;
         font-size: 1em;
-        text-align: left;
+        text-align: center;
         background: -webkit-linear-gradient(left, #3a3a3a, #9b9b9b, #7a7a7a);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
