@@ -641,27 +641,47 @@ html {
     -webkit-box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
     -moz-box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
     box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: #bdbdbd;
 }
 
 .skillCard img {
-    width: 50%;
+    width: 40%;
+}
+
+.skillCard p {
+    padding: 18px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    background: -webkit-linear-gradient(left, #a7a7a7, #b3b3b3, #d1d1d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skillCard span {
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #fff;
+    -webkit-text-shadow: 2px 2px 3px #adadad;
+    -moz-text-shadow: 2px 2px 3px #adadad;
+    text-shadow: 2px 2px 3px #adadad;
 }
 
 .progressBar {
     height: 5px;
     border: none;
-    background: linear-gradient(to right, #7ed396, #dbdbdb);
+    background: linear-gradient(to right, #91f3ad, #fff, #fff 130%);
+    position: relative;
 }
 
 .pBar1 {
-    width: 70%;
+    width: 60%;
 }
 
 .pBar2 {
-    width: 70%;
+    width: 60%;
 }
 
 .pBar3 {
@@ -685,7 +705,7 @@ html {
 }
 
 .pBar8 {
-    width: 65%;
+    width: 60%;
 }
 
 .pBar9 {
@@ -1094,9 +1114,14 @@ html {
     }
 
     .skillCard {
-        height: 100px;
+        height: 120px;
         font-size: .8em;
     }
+
+    .skillCard p {
+        padding: 13px 0;
+    }
+
     /* CONTACT ME SECTION */
 
     .contact h2 {
