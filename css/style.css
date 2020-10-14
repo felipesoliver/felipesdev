@@ -90,8 +90,10 @@ html {
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     color: #000;
-    -webkit-backdrop-filter: saturate(180%) blur(5px);
-    backdrop-filter: saturate(180%) blur(5px);
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: saturate(100%) blur(5px);
+    -moz-backdrop-filter: saturate(100%) blur(5px);
+    backdrop-filter: saturate(100%) blur(5px);
     border-bottom: solid 2px #a7f0bc;
     position: fixed;
     top: 0;
@@ -563,7 +565,7 @@ html {
     opacity: 0;
     height: 50px;
     position: absolute;
-    top: -1px;
+    top: 0;
     right: 55px;
     -webkit-transform: translate3d(20px,0,0);
     -moz-transform: translate3d(20px,0,0);
