@@ -5,10 +5,10 @@ let fadeNavBar = window.pageYOffset;
 window.onscroll = function() {
     let showNavBar = window.pageYOffset;
     if(fadeNavBar > showNavBar){
-        document.querySelector(".container").style.opacity = "1";
-        document.querySelector(".container").style.transition = "all 0.6s ease-in-out";
+        document.querySelector(".container").style.top = "0";
+        document.querySelector(".container").style.transition = "all 0.3s ease-in-out";
     }else{
-        document.querySelector(".container").style.opacity = "0";
+        document.querySelector(".container").style.top = "-4em";
     }
     fadeNavBar = showNavBar;
 }
