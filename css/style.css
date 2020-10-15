@@ -131,6 +131,10 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
+#check {
+    display: none;
+}
+
 .menu-btn {
     display: none;
 }
@@ -864,7 +868,7 @@ html {
 
     .navigationMenu {
         background-color: rgba(255,255,255,0);
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .menu-btn {
@@ -874,7 +878,8 @@ html {
         justify-content: center;
         width: 30px;
         height: 30px;
-        transition: all .5s ease-in-out;
+        transition: all .2s ease-in-out;
+        z-index: 1;
     }
 
     .menu-btn__burger {
@@ -883,7 +888,7 @@ html {
         background: #8bdda2;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-        transition: all .5s ease-in-out;
+        transition: all .2s ease-in-out;
     }
 
     .menu-btn__burger::before,
@@ -895,40 +900,101 @@ html {
         background: #8bdda2;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-        transition: all .5s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
     }
 
     .menu-btn__burger::before {
+        -webkit-transform: translateY(-12px);
+        -moz-transform: translateY(-12px);
+        -ms-transform: translateY(-12px);
         transform: translateY(-12px);
     }
 
     .menu-btn__burger::after {
+        -webkit-transform: translateY(12px);
+        -moz-transform: translateY(12px);
+        -ms-transform: translateY(12px);
         transform: translateY(12px);  
     }
 
     .menu-btn.open .menu-btn__burger {
-        transform: translateX(-50px);
         background: transparent;
         box-shadow: none;
     }
 
     .menu-btn.open .menu-btn__burger::before {
-        transform: rotate(45deg) translate(35px, -35px);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
     }
 
     .menu-btn.open .menu-btn__burger::after {
-        transform: rotate(-45deg) translate(35px, 35px);
+        -webkit-transform: rotate(-225deg);
+        -moz-transform: rotate(-225deg);
+        -ms-transform: rotate(-225deg);
+        transform: rotate(-225deg);
     }
 
     .pageList {
+        opacity: 0;
         display: none;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #fff;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+
+    #check:checked ~ .pageList {
+        opacity: 1;
+        left: 0;
+    }
+
+    #check:checked ~ .pageList .listItens {
+        -webkit-transform: perspective(100px) translate3d(0,0,0);
+        -moz-transform: perspective(100px) translate3d(0,0,0);
+        -ms-transform: perspective(100px) translate3d(0,0,0);
+        transform: perspective(100px) translate3d(0,0,0);
+        opacity: 1;
+        transition-delay: .3s;
+    }
+
+    .pageList a {
+        font-size: .8em;
+        font-weight: 300;
+    }
+
+    .listItens {
+        padding: 15px 0;
+        opacity: 0;
+        -webkit-transform: perspective(100px) translate3d(-50px,0,70px);
+        -moz-transform: perspective(100px) translate3d(-50px,0,70px);
+        -ms-transform: perspective(100px) translate3d(-50px,0,70px);
+        transform: perspective(100px) translate3d(-50px,0,70px);
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
     }
 
     /* ABOUT ME SECTION */
 
     .socialMedia {
         width: 300px;
-        left: 5%;
+        left: 3%;
         top: 115%;
     }
 
