@@ -93,6 +93,7 @@ html {
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: saturate(100%) blur(5px);
     -moz-backdrop-filter: saturate(100%) blur(5px);
+    -ms-backdrop-filter: saturate(100%) blur(5px);
     backdrop-filter: saturate(100%) blur(5px);
     border-bottom: solid 2px #a7f0bc;
     position: fixed;
