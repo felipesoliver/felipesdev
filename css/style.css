@@ -939,14 +939,17 @@ html {
         transform: rotate(-225deg);
     }
 
+    .brandMark {
+        margin: 0 30px 0 0;
+    }
+
     .pageList {
         opacity: 0;
-        display: none;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: -100%;
         width: 100%;
-        height: 600px;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -973,7 +976,6 @@ html {
     }
 
     .pageList a {
-        font-size: .8em;
         font-weight: 300;
     }
 
@@ -1027,7 +1029,7 @@ html {
     }
 
     .aboutMe {
-        margin: 10em auto 0 auto;
+        margin: 8em auto 0 auto;
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -1127,6 +1129,7 @@ html {
     .viewCard a::before {
         content: 'click to visit';
         top: 35%;
+        left: 18%;
         opacity: 1;
         font-size: .8em;
     }
