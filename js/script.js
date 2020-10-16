@@ -28,7 +28,7 @@ const debounce = function(func, wait, immediate) {
 		timeout = setTimeout(later, wait);
 		if (callNow) func.apply(context, args);
 	};
-};
+}
 
 const target = document.querySelectorAll('[data-animation]');
 const animationClass = 'animate';
@@ -50,7 +50,7 @@ if(target.length) {
     window.addEventListener('scroll', debounce(function() {
         animeScroll();
     },01));
-}  
+}
 
 /* BURGER MENU ANIMATION */
 
