@@ -1,3 +1,4 @@
+
 /* PAGE TRANSITION */
 
 @keyframes fadeIn {
@@ -18,6 +19,7 @@
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
     animation: fadeIn 0.7s ease-in-out;
 }
 
@@ -88,7 +90,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Open Sans', sans-serif;
     color: #000;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: saturate(100%) blur(5px);
@@ -111,7 +112,7 @@ html {
 }
 
 .brandMark {
-    font-size: 1.5em;
+    font-size: 1em;
     text-transform: uppercase;
 }
 
@@ -218,7 +219,6 @@ html {
     display: none;
     width: 180px;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 600;
 }
@@ -266,7 +266,6 @@ html {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
     color: #5c5c5c;
     position: relative;
 }
@@ -278,7 +277,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     border-radius: 50%;
     position: relative;
 }
@@ -350,8 +348,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: lighter;
     color: #fff;
     letter-spacing: 3px;
@@ -434,7 +431,6 @@ html {
 
 .portfolio h2 {
     margin: 100px 0;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
     color: #fff;
@@ -448,7 +444,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .viewCard hr {
@@ -498,7 +493,6 @@ html {
     position: absolute;
     top: 45%;
     left: 12%;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
     text-transform: uppercase;
@@ -526,7 +520,6 @@ html {
 
 .resumeLink {
     margin: 0 90px 0 0;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     font-weight: 500;
     color: #7a7a7a;
@@ -573,10 +566,10 @@ html {
 
 .resumeArea img {
     opacity: 0;
-    height: 50px;
+    height: 54px;
     position: absolute;
-    top: 0;
-    right: 55px;
+    top: -2px;
+    right: 50px;
     -webkit-transform: translate3d(20px,0,0);
     -moz-transform: translate3d(20px,0,0);
     transform: translate3d(20px,0,0);
@@ -612,7 +605,6 @@ html {
 
 .skillText {
     width: 40%;
-    font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -660,7 +652,6 @@ html {
 
 .skillCard p {
     padding: 18px 0;
-    font-family: 'Open Sans', sans-serif;
     font-size: .9em;
     background: -webkit-linear-gradient(left, #acacac, #8d8d8d, #6b6b6b);
     -webkit-background-clip: text;
@@ -671,7 +662,6 @@ html {
     position: absolute;
     top: -11px;
     right: -10px;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     font-weight: bolder;
     color: #fff;
@@ -731,7 +721,6 @@ html {
 }
 
 .contactText {
-    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -766,10 +755,9 @@ html {
     flex-wrap: wrap;
 }
 
-.contactForm input, textarea {
+.contactForm input, .contactForm textarea {
     margin: 0 0 15px 0;
     padding: 10px;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.05em;
     box-sizing: border-box;
     border: solid 1px #92e9ab;
@@ -820,9 +808,8 @@ html {
     content: '\2794';
     opacity: 0;
     position: absolute;
-    top: 451px;
+    top: 403px;
     left: 126px;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     font-weight: lighter;
     color: #fff;
@@ -850,7 +837,6 @@ html {
     align-items: center;
     justify-content: center;
     background: linear-gradient(225deg, #a7f0bc, #7bec9b);
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     color: #fff;
     -webkit-box-shadow: 0px -3px 10px 1px rgba(216, 216, 216,1);
@@ -858,11 +844,7 @@ html {
     box-shadow: 0px -3px 10px 1px rgb(216, 216, 216,1);
 }
 
-@media (max-width: 760px) {
-
-    body {
-        width: 100%;
-    }
+@media only screen and (max-width: 760px){
 
     /* NAVIGATION MENU */
 
@@ -1017,7 +999,6 @@ html {
     .sMButton1 span {
         margin: 0 0 0 13px;
         display: flex;
-        font-family: 'Open Sans', sans-serif;
         font-size: .9em;
         font-weight: 300;
         color: #fff;
@@ -1223,6 +1204,10 @@ html {
         padding: 13px 0;
     }
 
+    .skillCard span {
+        top: -10px;
+    }
+
     /* CONTACT ME SECTION */
 
     .contact h2 {
@@ -1241,10 +1226,9 @@ html {
         width: 100%;
     }
 
-    .contactForm input, textarea {
+    .contactForm input, .contactForm textarea {
         margin: 0 0 10px 0;
         padding: 10px;
-        font-family: 'Open Sans', sans-serif;
         font-size: .78em;
     }
 
@@ -1256,7 +1240,6 @@ html {
         padding: 10px 30px;
         font-size: .8em;
         font-weight: bold ;
-        font-family: 'Open Sans', sans-serif;
     }
 
     .sendButton::before {
