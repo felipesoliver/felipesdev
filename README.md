@@ -18,7 +18,7 @@
 
 * [About](#about)
 * [Project Status](#project-status)
-* [Features](#roadmap)
+* [Roadmap](#roadmap)
 * [App Demo](#app-demo)
 * [License](#license)
 * [Author](#author)
