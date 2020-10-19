@@ -2,11 +2,12 @@
 
 ## About
 
-    > Web app created for showing my front end developer **skills** information and **resumé**
+   > Web app created for showing my front end developer **skills** information and **resumé**
 
-<div align="center">
-    ![GitHub contributors](https://img.shields.io/github/contributors/felipesoliver/felipesdev?color=lightgrey)  ![GitHub last commit](https://img.shields.io/github/last-commit/felipesoliver/felipesdev?color=lightgrey)  ![GitHub repo size](https://img.shields.io/github/repo-size/felipesoliver/felipesdev?color=lightgrey)  ![GitHub](https://img.shields.io/github/license/felipesoliver/felipesdev?color=lightgrey)
-</div>
+   ![GitHub contributors](https://img.shields.io/github/contributors/felipesoliver/felipesdev?color=lightgrey)
+   ![GitHub last commit](https://img.shields.io/github/last-commit/felipesoliver/felipesdev?color=lightgrey)
+   ![GitHub repo size](https://img.shields.io/github/repo-size/felipesoliver/felipesdev?color=lightgrey)
+   ![GitHub](https://img.shields.io/github/license/felipesoliver/felipesdev?color=lightgrey)
 
 ## Contents
 
@@ -32,11 +33,11 @@ FelipeSDev: &#128187; Under development...
 
 ## App Demo
 
-> **Mobile Version**
+> #### Mobile Version
 > 
 > ![Mobile Version](/assets/mobile-version.gif)
 >
-> **Desktop Version**
+> #### Desktop Version
 >
 > ![Desktop Version](/assets/desktop-version.gif)
 
@@ -46,7 +47,7 @@ MIT © [FelipeSOliver](https://github.com/felipesoliver)
 
 ## Author
 
-<img src="assets/profilepic.png" style="width: 100px;">
+<img src="assets/profilepic.png" width="100px;">
 
 Developed with &#10084; by Felipe Oliveira 
 
