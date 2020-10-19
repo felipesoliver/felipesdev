@@ -2,7 +2,7 @@
 
 
 
-## About{#about}
+## About
 
    > Web app created for showing my front end developer **skills** information and **resumé**
 
@@ -16,22 +16,22 @@
 
 ## Contents
 
-* [About](#about)
-* [Project Status](#projectStatus)
-* [Features](#features)
-* [App Demo](#appDemo)
-* [License](#license)
-* [Author](#author)
+* [About](## About)
+* [Project Status](## Project Status)
+* [Features](## Features)
+* [App Demo](## App Demo)
+* [License](## License)
+* [Author](## Author)
 
 
 
-## Project Status{#projectStatus}
+## Project Status
 
 FelipeSDev: &#128187; Under development...
 
 
 
-## Features{#features}
+## Features
 
 - [x] Desktop design
 - [x] Portfolio links and resumé
@@ -42,7 +42,7 @@ FelipeSDev: &#128187; Under development...
 
 
 
-## App Demo{appDemo}
+## App Demo
 
 > #### Desktop Version
 >
@@ -56,13 +56,13 @@ FelipeSDev: &#128187; Under development...
 
 
 
-## License{#license}
+## License
 
 MIT © [FelipeSOliver](/LICENSE.md)
 
 
 
-## Author{#author}
+## Author
 
 <img src="assets/profilepic.png" width="150px;">
 
