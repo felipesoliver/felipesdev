@@ -2,7 +2,7 @@
 
 
 
-## About
+## About{#about}
 
    > Web app created for showing my front end developer **skills** information and **resumé**
 
@@ -16,53 +16,55 @@
 
 ## Contents
 
-* [About](##-About)
-* [Project Status](##-Project-Status)
-* [Features](##-Features)
-* [App Demo](##-App-Demo)
-* [License](##-License)
-* [Author](##-Author)
+* [About](#about)
+* [Project Status](#projectStatus)
+* [Features](#features)
+* [App Demo](#appDemo)
+* [License](#license)
+* [Author](#author)
 
 
 
-## Project Status
+## Project Status{#projectStatus}
 
 FelipeSDev: &#128187; Under development...
 
 
 
-## Features
+## Features{#features}
 
-- [x] desktop design
+- [x] Desktop design
 - [x] Portfolio links and resumé
-- [x] mobile responsive design 
+- [x] Mobile responsive design 
 - [ ] Contact form front n' back end settings
 - [ ] SEO improvment
 - [ ] First release launchment
 
 
 
-## App Demo
+## App Demo{appDemo}
 
-> #### Mobile Version
-> 
-> ![Mobile Version](/assets/mobile-version.gif)
->
 > #### Desktop Version
 >
 > ![Desktop Version](/assets/desktop-version.gif)
+>
+> #### Mobile Version
+> 
+> ![Mobile Version](/assets/mobile-version.gif)
 
 
 
-## License
+
+
+## License{#license}
 
 MIT © [FelipeSOliver](/LICENSE.md)
 
 
 
-## Author
+## Author{#author}
 
-<img src="assets/profilepic.png" width="100px;">
+<img src="assets/profilepic.png" width="150px;">
 
 Developed with &#10084; by Felipe Oliveira 
 
