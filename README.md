@@ -1,5 +1,7 @@
 # felipesdev.github.io
 
+
+
 ## About
 
    > Web app created for showing my front end developer **skills** information and **resumé**
@@ -9,7 +11,11 @@
    ![GitHub repo size](https://img.shields.io/github/repo-size/felipesoliver/felipesdev?color=lightgrey)
    ![GitHub](https://img.shields.io/github/license/felipesoliver/felipesdev?color=lightgrey)
 
+
+
 ## Contents
+
+--ts--
 
 * [About](##-About)
 * [Project Status](##-Project-Status)
@@ -18,9 +24,15 @@
 * [License](##-License)
 * [Author](##-Author)
 
+--te--
+
+
+
 ## Project Status
 
 FelipeSDev: &#128187; Under development...
+
+
 
 ## Features
 
@@ -30,6 +42,8 @@ FelipeSDev: &#128187; Under development...
 - [ ] Contact form front n' back end settings
 - [ ] SEO improvment
 - [ ] First release launchment
+
+
 
 ## App Demo
 
@@ -41,9 +55,13 @@ FelipeSDev: &#128187; Under development...
 >
 > ![Desktop Version](/assets/desktop-version.gif)
 
+
+
 ## License
 
-MIT © [FelipeSOliver](https://github.com/felipesoliver)
+MIT © [FelipeSOliver](/LICENSE.md)
+
+
 
 ## Author
 
@@ -51,5 +69,5 @@ MIT © [FelipeSOliver](https://github.com/felipesoliver)
 
 Developed with &#10084; by Felipe Oliveira 
 
-&#128075; Get in touch: [![Twitter Badge](https://img.shields.io/badge/-@tgmarinho-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/tgmarinho)](https://twitter.com/f_soliver) [![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/fsoliver/) 
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:felipephito@gmail.com)
+&#128075; Get in touch: [![Twitter Badge](https://img.shields.io/badge/-@tgmarinho-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/f_soliver)](https://twitter.com/f_soliver) [![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fsoliver/)](https://www.linkedin.com/in/fsoliver/) 
+[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:felipephito@gmail.com)](mailto:felipephito@gmail.com)
