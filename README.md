@@ -18,7 +18,7 @@
 
 * [About](#about)
 * [Project Status](#project-status)
-* [Features](#features)
+* [Features](#roadmap)
 * [App Demo](#app-demo)
 * [License](#license)
 * [Author](#author)
@@ -27,11 +27,11 @@
 
 ## Project Status:
 
-FelipeSDev: &#128187; Under development...
+FelipeSDev: &#9888; Under development...
 
 
 
-## Features:
+## Roadmap:
 
 - [x] Desktop design
 - [x] Portfolio links and resumé
@@ -44,11 +44,11 @@ FelipeSDev: &#128187; Under development...
 
 ## App Demo:
 
-> #### Desktop Version &#128421;
+#### Desktop Version &#128421;
 >
 > ![Desktop Version](/assets/desktop-version.gif)
 >
-> #### Mobile Version &#128241;
+#### Mobile Version &#128241;
 > 
 > ![Mobile Version](/assets/mobile-version.gif)
 
