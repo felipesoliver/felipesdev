@@ -16,12 +16,12 @@
 
 ## Contents
 
-* [About](## About)
-* [Project Status](## Project Status)
-* [Features](## Features)
-* [App Demo](## App Demo)
-* [License](## License)
-* [Author](## Author)
+* [About](#about)
+* [Project Status](#project-status)
+* [Features](#features)
+* [App Demo](#app-demo)
+* [License](#license)
+* [Author](#author)
 
 
 
