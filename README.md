@@ -44,12 +44,12 @@ FelipeSDev: &#9888; Under development...
 
 ## App Demo:
 
-#### Desktop Version &#128421;
->
+#### &#128421; Desktop Version 
+
 > ![Desktop Version](/assets/desktop-version.gif)
->
-#### Mobile Version &#128241;
-> 
+
+#### &#128241; Mobile Version 
+
 > ![Mobile Version](/assets/mobile-version.gif)
 
 
