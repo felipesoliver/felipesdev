@@ -64,7 +64,7 @@ MIT © [FelipeSOliver](/LICENSE.md)
 
 ## Author
 
-<img src="assets/profilepic.jpg" style="border-radius: 50%; width="150px;">
+<img src="assets/profilepic.jpg" border-radius="50%;" width="150px;">
 
 Developed with &#10084; by Felipe Oliveira 
 
