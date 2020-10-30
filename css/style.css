@@ -763,7 +763,8 @@ body {
 .contactForm input, .contactForm textarea {
     margin: 0 0 15px 0;
     padding: 10px;
-    font-size: 1.05em;
+    font-size: 1em;
+    font-weight: 300;
     box-sizing: border-box;
     border: solid 1px #92e9ab;
     border-radius: 6px;
@@ -784,7 +785,7 @@ body {
     margin: 0 0 50px 0;
     padding: 10px 50px;
     background: #a7f0bc;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     color: #fff;
     border-radius: 30px;
@@ -813,9 +814,9 @@ body {
     content: '\2794';
     opacity: 0;
     position: absolute;
-    top: 403px;
-    left: 126px;
-    font-size: 1.2em;
+    top: 388px;
+    left: 120px;
+    font-size: 1.4em;
     font-weight: lighter;
     color: #fff;
     -webkit-transform: translate3d(-30px,0,0);
@@ -842,7 +843,8 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(225deg, #a7f0bc, #7bec9b);
-    font-size: 1.2em;
+    font-size: 1em;
+    font-weight: 200;
     color: #fff;
     -webkit-box-shadow: 0px -3px 10px 1px rgba(216, 216, 216,1);
     -moz-box-shadow: 0px -3px 10px 1px rgb(216, 216, 216,1);
