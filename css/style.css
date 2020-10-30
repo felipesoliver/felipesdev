@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    animation: fadeIn 0.7s ease-in-out;
+}
 
 /* PAGE TRANSITION */
 
@@ -16,12 +24,6 @@
     100% {
         opacity: 1;
     }
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    animation: fadeIn 0.7s ease-in-out;
-    overflow-x: hidden;
 }
 
 /* SCROLLBAR */
@@ -77,10 +79,6 @@ body {
 [data-animation].animate {
     opacity: 1;
     transform: translate3d(0,0,0);
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 /* NAVIGATION MANU */
