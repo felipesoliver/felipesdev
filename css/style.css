@@ -384,6 +384,7 @@ body {
 
 .aboutMeTitle h2 {
     margin: 0 0 30px 0;
+    font-family: 'courier', serif;
     font-size: 2em;
     font-weight: 600;
     background: -webkit-linear-gradient(left, #3a3a3a, #b6b6b6, #7a7a7a);
@@ -395,9 +396,10 @@ body {
 
 .aboutMePhrase {
     width: 60%;
-    padding: 0 0 0 30px;
+    font-family: 'courier', serif;
     font-size: 1.3em;
     line-height: 1.3em;
+    text-align: center;
 }
 
 .aboutMeFrame {
