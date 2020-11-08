@@ -1,7 +1,3 @@
-/* PARALLAX / RELLAX */
-
-var rellax = new Rellax('.rellax');
-
 /* SHOW / HIDE MENU ANIMATION */
 
 let fadeNavBar = window.pageYOffset;
