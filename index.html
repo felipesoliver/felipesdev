@@ -41,7 +41,7 @@
         <main>
             <section class="aboutMe" id="secoundSection">
                 <div class="aboutMeProfile">
-                    <div class="socialMedia">
+                    <div class="socialMedia rellax" data-rellax-speed="3">
                         <ul class="socialMediaList">
                             <li class="sMButton sMButton1">
                                 <span>+55 11 98286-4983</span>
@@ -55,7 +55,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="aboutMePic" data-animation="right">
+                    <div class="aboutMePic rellax" data-rellax-speed="2" data-animation="right">
                         <div class="spinner"></div>
                         <div class="img">
                             <img src="images/profilepic.jpg" alt="Profile Picture">
@@ -66,14 +66,14 @@
                             <span>Living in São Paulo</span>
                         </div>
                     </div>
-                    <div class="aboutMeTitle" data-animation="inFront">
-                        <h2>< Front End Developer ></h2>
+                    <div class="aboutMeTitle">
+                        <h2 class="typewriter rellax" data-rellax-speed="2"></h2>
                     </div>
-                    <div class="aboutMePhrase" data-animation="behind">
+                    <div class="aboutMePhrase rellax" data-rellax-speed="2" data-animation="behind">
                         <p>Coder who focuses on writing clean, semantics and efficient code.</p>
                     </div>
                 </div>
-                <div class="aboutMeFrame" data-animation="bottom">
+                <div class="aboutMeFrame rellax" data-rellax-speed="2" data-animation="bottom">
                     <img src="images/frame.svg" alt="front end frame SVG">
                 </div>
             </section>
@@ -186,7 +186,8 @@
         <footer class="footer">
             <p class="copyright">&#169; 2020 Felipe Oliveira</p>
         </footer>
-
+        <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
