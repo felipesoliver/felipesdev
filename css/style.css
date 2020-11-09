@@ -7,6 +7,10 @@ body {
     animation: fadeIn 0.7s ease-in-out;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 /* PAGE TRANSITION */
 
 @keyframes fadeIn {
