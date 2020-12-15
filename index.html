@@ -171,12 +171,12 @@
                     </p>
                 </div>
                 <div class="containerForm">
-                    <form class="contactForm" data-animation="right">
-                        <input type="text" class="inputType1" placeholder="First Name">
-                        <input type="text" class="inputType1" placeholder="Last Name">
-                        <input type="text" class="inputType2" placeholder="Subject">
-                        <input type="email" class="inputType2" placeholder="E-mail">
-                        <textarea class="inputType2" cols="30" rows="10" placeholder="Message"></textarea>
+                    <form action="send.php" method="post" name="form" class="contactForm" data-animation="right">
+                        <input type="text" name="firstname" class="inputType1" placeholder="First Name">
+                        <input type="text" name="lastname" class="inputType1" placeholder="Last Name">
+                        <input type="email" name="email" class="inputType2" placeholder="E-mail">
+                        <input type="text" name="subject" class="inputType2" placeholder="Subject">
+                        <textarea name="message" class="inputType2" cols="30" rows="10" placeholder="Message"></textarea>
                         <button class="sendButton" type="submit">Submit</button>
                     </form>
                 </div>
