@@ -422,6 +422,7 @@ main {
 /* PORTFOLIO SECTION */
 
 .portfolio {
+    padding: 40px 0;
     margin: 0 auto;
     width: 95%;
     height: auto;
@@ -437,7 +438,7 @@ main {
 }
 
 .portfolio h2 {
-    margin: 100px 0;
+    margin: 60px 0;
     font-size: 1.5em;
     font-weight: 600;
     color: #fff;
@@ -446,8 +447,9 @@ main {
 }
 
 .viewCard {
-    margin: 0 auto;
+    margin: 40px auto;
     width: 70%;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -475,6 +477,7 @@ main {
 
 .viewCard img {
     width: 100%;
+    height: 280px;
     -webkit-box-shadow: 8px 8px 15px 1px rgba(120,120,120,1);
     -moz-box-shadow: 8px 8px 15px 1px rgba(120,120,120,1);
     box-shadow: 8px 8px 15px 1px rgba(120,120,120,1);
@@ -487,7 +490,7 @@ main {
 }
 
 .viewCard img:hover {
-    opacity: .8;
+    opacity: .7;
 }
 
 .viewCard a {
@@ -505,7 +508,7 @@ main {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 6px;
-    color: #91e5a9;
+    color: #fff;
     -webkit-transition: all .6s ease-in-out;
     -moz-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out;
@@ -517,7 +520,7 @@ main {
 } 
 
 .resumeArea {
-    margin: 100px 0;
+    margin: 40px 0;
     width: 320px;
     height: 50px;
     display: flex;
