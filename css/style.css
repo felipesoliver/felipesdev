@@ -89,10 +89,24 @@ main {
 
 .container {
     width: 100%;
-    height: 4em;
+    height: 4.5em;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    background: #a7f0bc;
+    border-radius: 0 0 15px 15px;
+    border-bottom: solid 2px #a7f0bc;
+    border-left: solid 2px #a7f0bc;
+    border-right: solid 2px #a7f0bc;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all .3s ease-in-out;
+}
+
+.container.activated {
+    height: 4em;
     color: #000;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: saturate(100%) blur(5px);
@@ -100,9 +114,8 @@ main {
     -ms-backdrop-filter: saturate(100%) blur(5px);
     backdrop-filter: saturate(100%) blur(5px);
     border-bottom: solid 2px #a7f0bc;
-    position: fixed;
-    top: 0;
-    z-index: 3;
+    border-left: solid 2px #a7f0bc;
+    border-right: solid 2px #a7f0bc;
 }
 
 .navigationMenu {
@@ -151,7 +164,7 @@ main {
     justify-content: space-between;
 }
 
-.listItens a{
+.container .listItens a{
     font-size: 0.85em;
     font-weight: 600;
     color: #808080;
@@ -159,10 +172,14 @@ main {
     text-decoration: none;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
-.listItens a:hover {
+.container .listItens a:hover {
+    color: #fff;
+}
+
+.container.activated .listItens a:hover {
     color: #a7f0bc;
 }
 
