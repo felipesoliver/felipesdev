@@ -96,9 +96,9 @@ main {
     color: #fff;
     background: #a7f0bc;
     border-radius: 0 0 15px 15px;
-    border-bottom: solid 2px #a7f0bc;
+    /* border-bottom: solid 2px #a7f0bc;
     border-left: solid 2px #a7f0bc;
-    border-right: solid 2px #a7f0bc;
+    border-right: solid 2px #a7f0bc; */
     position: fixed;
     top: 0;
     z-index: 3;
@@ -109,16 +109,16 @@ main {
 }
 
 .container.activated {
-    height: 4em;
+    height: 3.5em;
     color: #000;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: saturate(100%) blur(5px);
     -moz-backdrop-filter: saturate(100%) blur(5px);
     -ms-backdrop-filter: saturate(100%) blur(5px);
     backdrop-filter: saturate(100%) blur(5px);
-    border-bottom: solid 2px #a7f0bc;
+    /* border-bottom: solid 2px #a7f0bc;
     border-left: solid 2px #a7f0bc;
-    border-right: solid 2px #a7f0bc;
+    border-right: solid 2px #a7f0bc; */
 }
 
 .navigationMenu {
