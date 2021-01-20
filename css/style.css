@@ -89,26 +89,26 @@ main {
 
 .container {
     width: 100%;
-    height: 4.5em;
+    height: 3.5em;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    background: #a7f0bc;
+    background: #fff;
     border-radius: 0 0 15px 15px;
     position: fixed;
     top: 0;
     z-index: 3;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    transition: all .3s linear;
+    -webkit-transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    -moz-transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    -ms-transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
 }
 
 .container.activated {
-    height: 3.5em;
+    height: 4.5em;
     color: #000;
-    background: rgba(255, 255, 255, 0.5);
+    background: #a7f0bc60;
     -webkit-backdrop-filter: saturate(100%) blur(5px);
     -moz-backdrop-filter: saturate(100%) blur(5px);
     -ms-backdrop-filter: saturate(100%) blur(5px);
@@ -172,10 +172,7 @@ main {
     transition: all .4s linear;
 }
 
-.container .listItens a:hover {
-    color: #fff;
-}
-
+.container .listItens a:hover,
 .container.activated .listItens a:hover {
     color: #a7f0bc;
 }
@@ -461,27 +458,28 @@ main {
 }
 
 .viewCard {
+    padding: 30px;
     margin: 40px auto;
     width: 70%;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 20px;
 }
 
-.viewCard hr {
-    margin: 0 50px;
-    width: 2px;
-    height: 250px;
-    border: none;
-    background: #81ce97;
+.viewCardLeft {
+    background: linear-gradient(335deg, #ffffff0c, #ffffffa2);
+}
+
+.viewCardRight {
+    background: linear-gradient(45deg, #ffffff0c, #ffffffa2);
 }
 
 .viewCard p {
     width: 40%;
     font-size: 1.5em;
     font-weight: 600;
-    text-align: right;
     line-height: 1.5em;
     background: -webkit-linear-gradient(left, #3a3a3a, #9b9b9b, #7a7a7a);
     -webkit-background-clip: text;
@@ -489,49 +487,84 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
-.viewCard img {
-    width: 100%;
-    height: 280px;
-    -webkit-box-shadow: 8px 8px 15px 1px rgba(120,120,120,1);
-    -moz-box-shadow: 8px 8px 15px 1px rgba(120,120,120,1);
-    box-shadow: 8px 8px 15px 1px rgba(120,120,120,1);
-    border-radius: 10px;
-    opacity: 1;
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
-    z-index: 1;
+.viewCard .pLeft {
+    text-align: left;
 }
 
-.viewCard img:hover {
-    opacity: .7;
+.viewCard .pRight {
+    text-align: right;
 }
+
 
 .viewCard a {
-    width: 50%;
+    width: fit-content;
+    height: fit-content;
     position: relative;
 }
 
 .viewCard a::before {
     content: 'click here to visit';
     opacity: 0;
+    width: 100%;
+    height: 280px;
     position: absolute;
-    top: 45%;
-    left: 12%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 6px;
-    color: #fff;
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
-    z-index: 2;
+    color: #a7f0bc;
+    border-radius: 10px;
+    background: #ffffff4d;
+    -webkit-backdrop-filter: saturate(100%) blur(3px);
+    -moz-backdrop-filter: saturate(100%) blur(3px);
+    -ms-backdrop-filter: saturate(100%) blur(3px);
+    backdrop-filter: saturate(100%) blur(3px);
+    -webkit-transform: perspective(100px) translate3d(0, 0, 0);
+    -moz-transform: perspective(100px) translate3d(0, 0, 0);
+    -ms-transform: perspective(100px) translate3d(0, 0, 0);
+    transform: perspective(100px) translate3d(0, 0, 0);
+    -webkit-transition: all .6s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    -moz-transition: all .6s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    transition: all .6s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    z-index: 1;
 }
 
 .viewCard a:hover::before {
     opacity: 1;
+    -webkit-transform: perspective(100px) translate3d(0, 0, 5px);
+    -moz-transform: perspective(100px) translate3d(0, 0, 5px);
+    -ms-transform: perspective(100px) translate3d(0, 0, 5px);
+    transform: perspective(100px) translate3d(0, 0, 5px);
 } 
+
+.viewCard a img {
+    width: 430px;
+    height: 280px;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 8px 15px 1px rgba(120,120,120,1);
+    -moz-box-shadow: 8px 8px 15px 1px rgba(120,120,120,1);
+    box-shadow: 8px 8px 15px 1px rgba(120,120,120,1);
+    -webkit-transform: perspective(100px) translate3d(0, 0, 0);
+    -moz-transform: perspective(100px) translate3d(0, 0, 0);
+    -ms-transform: perspective(100px) translate3d(0, 0, 0);
+    transform: perspective(100px) translate3d(0, 0, 0);
+    -webkit-transition: all .6s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    -moz-transition: all .6s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    -ms-transition: all .6s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    transition: all .6s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+}
+
+.viewCard a:hover img {
+    -webkit-transform: perspective(100px) translate3d(0, 0, 5px);
+    -moz-transform: perspective(100px) translate3d(0, 0, 5px);
+    -ms-transform: perspective(100px) translate3d(0, 0, 5px);
+    transform: perspective(100px) translate3d(0, 0, 5px);
+}
 
 .resumeArea {
     margin: 40px 0;

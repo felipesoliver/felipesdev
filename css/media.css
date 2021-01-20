@@ -16,7 +16,6 @@
     height: 4px;
     background: #8bdda2;
     border-radius: 5px;
-    /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
     transition: all .2s ease-in-out;
 }
 
@@ -28,7 +27,6 @@
     height: 4px;
     background: #8bdda2;
     border-radius: 5px;
-    /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
@@ -36,17 +34,17 @@
 }
 
 .menu-btn__burger::before {
-    -webkit-transform: translateY(-12px);
-    -moz-transform: translateY(-12px);
-    -ms-transform: translateY(-12px);
-    transform: translateY(-12px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .menu-btn__burger::after {
-    -webkit-transform: translateY(12px);
-    -moz-transform: translateY(12px);
-    -ms-transform: translateY(12px);
-    transform: translateY(12px);  
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);  
 }
 
 .menu-btn.open .menu-btn__burger {
@@ -243,34 +241,51 @@
 
 .viewCard {
     margin: 20px 0;
+    padding: 0;
     width: 90%;
-    flex-direction: column-reverse;
     flex-wrap: wrap;
+    background: none;
 }
 
-.viewCard hr {
-    display: none;
+.viewCardRight {
+    flex-direction: column-reverse;
+}
+
+.viewCardLeft {
+    flex-direction: column;
 }
 
 .viewCard a {
-    width: 90%;
-}
-
-.viewCard img {
     margin: 0 0 40px 0;
-    width: 100%;
+    width: 90%;
     height: 180px;
 }
 
 .viewCard a::before {
     content: 'click to visit';
-    top: 35%;
-    left: 18%;
     opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: .8em;
+    background: none;
+    -webkit-backdrop-filter: none;
+    -moz-backdrop-filter: none;
+    -ms-backdrop-filter: none;
+    backdrop-filter: none;
 }
 
-.viewCard p {
+.viewCard a img {
+    width: 100%;
+    height: 100%;
+}
+
+.viewCard .pLeft,
+.viewCard .pRight {
     width: 90%;
     font-size: .78em;
     font-weight: 400;
