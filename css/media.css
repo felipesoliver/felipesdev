@@ -67,7 +67,6 @@
 }
 
 .pageList {
-    opacity: 0;
     position: absolute;
     top: 0;
     left: -100%;
@@ -78,14 +77,13 @@
     justify-content: center;
     flex-direction: column;
     background: #fff;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 #check:checked ~ .pageList {
-    opacity: 1;
     left: 0;
 }
 
