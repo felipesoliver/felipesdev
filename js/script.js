@@ -1,17 +1,29 @@
-/* INCREASE MENU ANIMATION */
+/* INCREASE N' FADE MENU ANIMATION */
 
-function increaseMenu() {
+function increaseFadeMenu() {
     const navBar = document.querySelector('.container');
     function increaseNavBar() {
         if(window.pageYOffset > 0){
-            navBar.classList.add('activated');
+            navBar.classList.add('increased');
         } else {
-            navBar.classList.remove('activated');
-        }
+            navBar.classList.remove('increased');
+        };   
     }
     window.addEventListener('scroll', increaseNavBar);
+    
+    let hideNavBar = window.pageYOffset;
+    function fadeNavBar() {
+        let showNavBar = window.pageYOffset;
+        if(hideNavBar < showNavBar) {
+            navBar.classList.add('faded');
+        } else {
+            navBar.classList.remove('faded');
+        };
+        hideNavBar = showNavBar;
+    }
+    window.addEventListener('scroll', fadeNavBar);
 }
-increaseMenu();
+increaseFadeMenu();
 
 /* SCROLL ANIMATION */
 
