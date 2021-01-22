@@ -463,7 +463,7 @@
 /* FOOTER */
 
 .topBtn {
-    opacity: 1;
+    opacity: 0;
     width: 120px;
     height: 30px;
     position: absolute;
@@ -471,14 +471,26 @@
     right: 50%;
     border-radius: 10px 10px 0 0;
     box-shadow: none;
+    -webkit-transform: perspective(100px) translate3d(50%,50px,0);
+    -moz-transform: perspective(100px) translate3d(50%,50px,0);
+    -ms-transform: perspective(100px) translate3d(50%,50px,0);
+    transform: perspective(100px) translate3d(50%,50px,0);
+    -webkit-transition: all .4s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    -moz-transition: all .4s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    -ms-transition: all .4s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    transition: all .4s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+}
+
+.topBtn:hover {
+    background: #a7f0bc;
     -webkit-transform: perspective(100px) translate3d(50%,0,0);
     -moz-transform: perspective(100px) translate3d(50%,0,0);
     -ms-transform: perspective(100px) translate3d(50%,0,0);
     transform: perspective(100px) translate3d(50%,0,0);
 }
 
-.topBtn:hover {
-    background: #a7f0bc;
+.topBtn.scrolled {
+    opacity: 1;
     -webkit-transform: perspective(100px) translate3d(50%,0,0);
     -moz-transform: perspective(100px) translate3d(50%,0,0);
     -ms-transform: perspective(100px) translate3d(50%,0,0);
@@ -490,6 +502,7 @@
     height: 100px;
     box-shadow: none;
     background: #a7f0bc;
+    z-index: 2;
 }
 
 .footer p {

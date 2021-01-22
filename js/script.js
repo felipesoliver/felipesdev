@@ -34,20 +34,29 @@ function backTopBtnInit() {
     
     const backTopBtn = document.querySelector('.topBtn');
     const mobileWidth = 760;
+    const doc = document.documentElement;
     function hideBackTopBtn() {
         
+        const scroller = Math.round(window.pageYOffset);
         const fadePoint = document.querySelector('.portfolio').getBoundingClientRect().top;
-        if(window.pageYOffset >= fadePoint && window.innerWidth >= mobileWidth) {
+        if(scroller >= fadePoint && window.innerWidth >= mobileWidth) {
             backTopBtn.classList.add('activated');
         } else {
             backTopBtn.classList.remove('activated');
         }
         
         const scrollTillFooter = 2730;
-        if(window.pageYOffset >= scrollTillFooter && window.innerWidth >= mobileWidth) {
+        if(scroller >= scrollTillFooter && window.innerWidth >= mobileWidth) {
             backTopBtn.classList.add('joined');
         } else {
             backTopBtn.classList.remove('joined');
+        }
+        
+        const totalScroll = Math.round(doc.scrollHeight - doc.clientHeight);
+        if(scroller === totalScroll && window.innerWidth <= mobileWidth) {
+            backTopBtn.classList.add('scrolled');
+        } else {
+            backTopBtn.classList.remove('scrolled');
         }
     }
     window.addEventListener('scroll', hideBackTopBtn);
