@@ -17,19 +17,17 @@
     </head>
     <body>
         <header>
-            <div class="container" id="firstSection">
+            <div id="firstSection"></div>
+            <div class="container">
                 <nav class="navigationMenu">
                     <div class="brandMark">
-                        <a href="#firstSection"><h1>Felipe <span>Oliveira</span></h1></a>
+                        <a href="#"><h1>Felipe <span>Oliveira</span></h1></a>
                     </div>
-                    <input type="checkbox" id="check">
-                    <label for="check">
-                        <div class="menu-btn">
-                            <div class="menu-btn__burger"></div>
-                        </div>
-                    </label>
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
                     <ul class="pageList">
-                        <li class="listItens li1"><a href="#secoundSection">About me</a></li>
+                        <li class="listItens li1"><a href="#secondSection">About me</a></li>
                         <li class="listItens li2"><a href="#thirdSection">Portfolio</a></li>
                         <li class="listItens li3"><a href="#fourthSection">Skills</a></li>
                         <li class="listItens li4"><a href="#fifthSection">Get in touch</a></li>
@@ -39,7 +37,7 @@
         </header>
 
         <main>
-            <section class="aboutMe" id="secoundSection">
+            <section class="aboutMe" id="secondSection">
                 <div class="aboutMeProfile">
                     <div class="socialMedia">
                         <ul class="socialMediaList">
@@ -80,10 +78,10 @@
             
             <section class="portfolio" id="thirdSection">
                 <h2 data-animation="bottom">Some Of My Last Work</h3>
-                <div class="viewCard viewCardRight">
-                    <p class="pRight" data-animation="inFront">Web app developed for my photographic professional portfolio</p>
-                    <a href="https://felipesoliver.github.io/fsoliveira.github.io/" target="blank" data-animation="behind"><img src="images/fsoliveira.png" alt="Cut of the index page from www.fsoliveira.com"></a>
-                </div>
+                    <div class="viewCard viewCardRight">
+                        <p class="pRight" data-animation="inFront">Web app developed for my photographic professional portfolio</p>
+                        <a href="https://felipesoliver.github.io/fsoliveira.github.io/" target="blank" data-animation="behind"><img src="images/fsoliveira.png" alt="Cut of the index page from www.fsoliveira.com"></a>
+                    </div>
                 <div class="viewCard viewCardLeft">
                     <a href="https://felipesoliver.github.io/naprates-confeitaria.github.io/" target="blank" data-animation="behind"><img src="images/naprates.png" alt="Cut of the index page from naprates project"></a>
                     <p class="pLeft" data-animation="inFront">Web app developed for Ná Prates' brand</p>
@@ -93,7 +91,7 @@
                     <img src="images/resume_icon.svg" alt="Resumé Icon">
                 </div>
             </section>
-
+            
             <section class="skills" id="fourthSection">
                 <div class="skillText" data-animation="left">
                     <h2>Skills with the following technologies: </h2>
@@ -165,7 +163,7 @@
                     </li>
                 </ul>     
             </section>
-
+            
             <section class="contact" id="fifthSection">
                 <div class="contactText" data-animation="left">
                     <h2>Let's Talk?</h2>
@@ -185,8 +183,9 @@
                 </div>
             </section>
         </main>
-
+        
         <footer class="footer">
+            <a class="topBtn" href="#firstSection"><img src="images/angle-top.svg" alt="Arrow top"></a>
             <p class="copyright">&#169; 2020 Felipe Oliveira</p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>

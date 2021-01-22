@@ -1,8 +1,10 @@
-/* INCREASE N' FADE MENU ANIMATION */
+// INCREASE N' HIDE MENU ANIMATION
 
-function increaseFadeMenu() {
+function increaseHideMenuInit() {
+    
     const navBar = document.querySelector('.container');
     function increaseNavBar() {
+        
         if(window.pageYOffset > 0){
             navBar.classList.add('increased');
         } else {
@@ -12,7 +14,8 @@ function increaseFadeMenu() {
     window.addEventListener('scroll', increaseNavBar);
     
     let hideNavBar = window.pageYOffset;
-    function fadeNavBar() {
+    function hideMenu() {
+        
         let showNavBar = window.pageYOffset;
         if(hideNavBar < showNavBar) {
             navBar.classList.add('faded');
@@ -21,13 +24,39 @@ function increaseFadeMenu() {
         };
         hideNavBar = showNavBar;
     }
-    window.addEventListener('scroll', fadeNavBar);
+    window.addEventListener('scroll', hideMenu);
 }
-increaseFadeMenu();
+increaseHideMenuInit();
 
-/* SCROLL ANIMATION */
+// BACK TO TOP BUTTON
 
-function AOS() {
+function backTopBtnInit() {
+    
+    const backTopBtn = document.querySelector('.topBtn');
+    const mobileWidth = 760;
+    function hideBackTopBtn() {
+        
+        const fadePoint = document.querySelector('.portfolio').getBoundingClientRect().top;
+        if(window.pageYOffset >= fadePoint && window.innerWidth >= mobileWidth) {
+            backTopBtn.classList.add('activated');
+        } else {
+            backTopBtn.classList.remove('activated');
+        }
+        
+        const scrollTillFooter = 2730;
+        if(window.pageYOffset >= scrollTillFooter && window.innerWidth >= mobileWidth) {
+            backTopBtn.classList.add('joined');
+        } else {
+            backTopBtn.classList.remove('joined');
+        }
+    }
+    window.addEventListener('scroll', hideBackTopBtn);
+}
+backTopBtnInit();
+
+// SCROLL ANIMATION
+
+function AOSInit() {
     const debounce = function(func, wait, immediate) {
         let timeout;
         return function(...args) {
@@ -40,8 +69,8 @@ function AOS() {
             clearTimeout(timeout);
             timeout = setTimeout(later, wait);
             if (callNow) func.apply(context, args);
-        };
-    };
+        }
+    }
     
     const target = document.querySelectorAll('[data-animation]');
     const animationClass = 'animate';
@@ -54,7 +83,7 @@ function AOS() {
             }else{
                 element.classList.remove(animationClass);
             }
-        })
+        });
     }
     
     animeScroll();
@@ -65,28 +94,40 @@ function AOS() {
         },01));
     }
 }
-AOS();
+AOSInit();
 
-/* BURGER MENU ANIMATION */
+// BURGER MENU ANIMATION
 
-function burgerMenu() {
+function burgerMenuInit() {
+
     const menuBtn = document.querySelector('.menu-btn');
+    const pageList = document.querySelector('.pageList');
     let menuOpen = false;
+    const internalLinks = document.querySelectorAll('[href^="#"]');
+    internalLinks.forEach((i) => {
+        i.addEventListener('click', () => {
+            menuBtn.classList.remove('open');
+            pageList.classList.remove('active');
+        });
+    });
+
     menuBtn.addEventListener('click', () => {
         if(!menuOpen) {
             menuBtn.classList.add('open');
+            pageList.classList.add('active');
             menuOpen = true;
         } else {
             menuBtn.classList.remove('open');
+            pageList.classList.remove('active');
             menuOpen = false;
         }
     });
 }
-burgerMenu();
+burgerMenuInit();
 
-/* TYPEWRITER */
+// TYPEWRITER
 
-function typeWriter() {
+function typeWriterInit() {
     new TypeIt('.typewriter', {
         speed: 150,
         startDelay: 1000,
@@ -105,4 +146,4 @@ function typeWriter() {
     .pause(1000)
     .go();
 }
-typeWriter();
+typeWriterInit();
