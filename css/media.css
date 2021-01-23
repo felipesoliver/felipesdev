@@ -185,7 +185,7 @@
 .sMButton1 span {
     margin: 0 0 0 13px;
     display: flex;
-    font-size: .9em;
+    font-size: 15px;
     font-weight: 300;
     color: #fff;
 }
@@ -233,7 +233,7 @@
 .aboutMePic .info {
     width: 196px;
     height: 196px;
-    font-size: .7em;
+    font-size: 16px;
 }
 
 .aboutMePic hr {
@@ -247,15 +247,16 @@
 
 .aboutMeTitle h2{
     margin: 0 0 10px 0;
-    font-size: 1em;
+    font-size: 16px;
     letter-spacing: 3px;
 }
 
 .aboutMePhrase {
     width: 95%;
     padding: 0;
-    font-size: .85em;
+    font-size: 16px;
     text-align: center;
+    color: #7a7a7a;
 }
 
 .aboutMeFrame {
@@ -273,9 +274,11 @@
 
 .portfolio h2 {
     margin: 50px 0;
-    font-size: 1em;
-    font-weight: lighter;
-    letter-spacing: 3px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: none;
+    text-align: center;
 }
 
 .viewCard {
@@ -310,7 +313,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: .8em;
+    font-size: 16px;
     background: none;
     -webkit-backdrop-filter: none;
     -moz-backdrop-filter: none;
@@ -326,7 +329,7 @@
 .viewCard .pLeft,
 .viewCard .pRight {
     width: 90%;
-    font-size: .78em;
+    font-size: 20px;
     font-weight: 400;
     text-align: center;
 }
@@ -341,16 +344,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 115px;
-    height: 20px;
+    width: 135px;
+    height: 30px;
     background: #a7f0bc;
-    font-size: .8em;
+    font-size: 16px;
     font-weight: 300;
     color: #fff;
     text-align: center;
     line-height: 0;
     text-transform: initial;
-    border-radius: 20px 0 0 20px;
+    border-radius: 8px;
     -webkit-box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
     -moz-box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
     box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
@@ -366,9 +369,9 @@
 
 .resumeArea img {
     opacity: 1;
-    height: 36px;
-    top: 8px;
-    right: 62px;
+    height: 45px;
+    top: 4px;
+    right: 41px;
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
@@ -384,17 +387,34 @@
 }
 
 .skillText {
+    margin: 0 0 50px 0;
     width: 100%;
     justify-content: center;
-    font-size: 1em;
-    text-align: left;
+    flex-direction: column;
 }
 
 .skillText h2 {
-    padding: 0 0 50px 0;
-    width: 95%;
-    font-size: 1em;
+    margin: 0 0 30px 0;
+    padding: 0;
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: none;
     text-align: center;
+    background: -webkit-linear-gradient(left, #8bdda2, #79c48e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skillText p {
+    padding: 0;
+    width: 95%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5em;
     background: -webkit-linear-gradient(left, #3a3a3a, #9b9b9b, #7a7a7a);
     -webkit-background-clip: text;
     background-clip: text;
@@ -412,7 +432,7 @@
 
 .skillCard {
     height: 120px;
-    font-size: .8em;
+    font-size: 14px;
 }
 
 .skillCard p {
@@ -426,14 +446,23 @@
 /* CONTACT ME SECTION */
 
 .contact h2 {
-    font-size: 1em;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
     padding: 0;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: none;
+    text-align: center;
+    background: -webkit-linear-gradient(left, #8bdda2, #79c48e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contact p {
-    font-size: .78em;
-    line-height: 1.4em;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5em;
     text-align: center;
 }
 
@@ -444,7 +473,9 @@
 .contactForm input, .contactForm textarea {
     margin: 0 0 10px 0;
     padding: 10px;
-    font-size: .78em;
+    font-size: 16px;
+    color: #7a7a7a;
+    letter-spacing: 1px;
 }
 
 .inputType1 {
@@ -454,10 +485,11 @@
 .sendButton {
     margin-bottom: 90px;
     padding: 10px 30px;
-    font-size: .8em;
+    height: 40px;
+    font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: initial;
 }
 
 .sendButton::before {
@@ -509,5 +541,5 @@
 }
 
 .footer p {
-    font-size: .8em;
+    font-size: 16px;
 }

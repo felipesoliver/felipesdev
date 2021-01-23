@@ -38,15 +38,13 @@ function backTopBtnInit() {
     function hideBackTopBtn() {
         
         const scroller = Math.round(window.pageYOffset);
-        const fadePoint = document.querySelector('.portfolio').getBoundingClientRect().top;
-        if(scroller >= fadePoint && window.innerWidth >= mobileWidth) {
+        if(scroller > 0 && window.innerWidth >= mobileWidth) {
             backTopBtn.classList.add('activated');
         } else {
             backTopBtn.classList.remove('activated');
         }
         
-        const scrollTillFooter = 2730;
-        if(scroller >= scrollTillFooter && window.innerWidth >= mobileWidth) {
+        if(scroller >= 2740 && window.innerWidth >= mobileWidth) {
             backTopBtn.classList.add('joined');
         } else {
             backTopBtn.classList.remove('joined');

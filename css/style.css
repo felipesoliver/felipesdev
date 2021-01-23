@@ -730,6 +730,9 @@ main {
 }
 
 .skillText h2 {
+    display: none;
+}
+.skillText p {
     padding: 20px 0;
     width: 75%;
     font-size: 1.5em;
@@ -860,7 +863,10 @@ main {
 .contactText p {
     padding: 0 0 50px 0;
     font-size: 1.3em;
-    color: #818181;
+    background: -webkit-linear-gradient(left, #acacac, #8d8d8d, #6b6b6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .containerForm {
@@ -901,9 +907,12 @@ main {
 .sendButton {
     margin-bottom: 50px;
     padding: 10px 50px;
-    background: #a7f0bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1em;
     font-weight: 600;
+    background: #a7f0bc;
     color: #fff;
     border-radius: 10px;
     border: none;
