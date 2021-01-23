@@ -60,6 +60,11 @@ function backTopBtnInit() {
         }
     }
     window.addEventListener('scroll', hideBackTopBtn);
+
+    function getBackTop() {
+        window.scrollTo(0, 0);
+    }
+    backTopBtn.addEventListener('click', getBackTop);
 }
 backTopBtnInit();
 
@@ -94,7 +99,6 @@ function AOSInit() {
             }
         });
     }
-    
     animeScroll();
     
     if(target.length) {
