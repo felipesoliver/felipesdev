@@ -313,7 +313,7 @@
     left: 26px;
     width: 50px;
     height: 50px;
-    background: #7bec9b;
+    background: #a7f0bc;
 }
 
 .viewCardText {
@@ -361,6 +361,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #a7f0bc;
 }
 
 .viewCard a::after {
@@ -382,6 +383,7 @@
 
 .resumeLink {
     height: 25px;
+    background: #a7f0bc;
 }
 
 /* SKILLS SECTION */
