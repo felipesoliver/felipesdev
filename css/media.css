@@ -273,7 +273,7 @@
 }
 
 .portfolio h2 {
-    margin: 50px 0;
+    margin: 50px 0 70px 0;
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -282,99 +282,106 @@
 }
 
 .viewCard {
-    margin: 20px 0;
+    margin: 0 0 40px 0;
     padding: 0;
+    height: fit-content;
     width: 90%;
     flex-wrap: wrap;
     background: none;
 }
 
-.viewCardRight {
-    flex-direction: column-reverse;
+.viewCard img {
+    margin: 0;
+    width: 100%;
+    height: initial;
+    border-radius: 15px 15px 0 0;
+    box-shadow: none;
 }
 
-.viewCardLeft {
-    flex-direction: column;
+.viewCardContent {
+    padding: 30px 0;
+    width: 100%;
+    position: initial;
+    border-radius: 0 0 15px 15px;
+    background: #fff;
+    backdrop-filter: none;
+    box-shadow: none;
+}
+
+.viewCardContent::after {
+    top: 115px;
+    left: 26px;
+    width: 50px;
+    height: 50px;
+    background: #7bec9b;
+}
+
+.viewCardText {
+    width: 90%;
+    align-items: center;
+}
+
+.viewCard h3,
+.viewCard span,
+.viewCard p {
+    text-align: center;
+}
+
+.viewCard h3 {
+    margin: 0;
+    position: absolute;
+    top: 122px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: -webkit-linear-gradient(45deg, #fff, #fff, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+}
+
+.viewCard span {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+}
+
+.viewCard p {
+    margin-bottom: 20px;
+    width: 80%;
+    font-size: 16px;
 }
 
 .viewCard a {
-    margin: 0 0 40px 0;
-    width: 90%;
-    height: 180px;
-}
-
-.viewCard a::before {
-    content: 'click to visit';
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    position: relative;
+    bottom: 0;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
-    background: none;
-    -webkit-backdrop-filter: none;
-    -moz-backdrop-filter: none;
-    -ms-backdrop-filter: none;
-    backdrop-filter: none;
 }
 
-.viewCard a img {
-    width: 100%;
-    height: 100%;
-}
-
-.viewCard .pLeft,
-.viewCard .pRight {
-    width: 90%;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
+.viewCard a::after {
+    opacity: 1;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
 }
 
 .resumeArea {
-    margin: 20px 0;
-}
-
-.resumeLink {
-    margin: 0 35px 0 0;
-    padding: 5px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 135px;
-    height: 30px;
-    background: #a7f0bc;
-    font-size: 16px;
-    font-weight: 300;
-    color: #fff;
-    text-align: center;
-    line-height: 0;
-    text-transform: initial;
-    border-radius: 8px;
-    -webkit-box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
-    -moz-box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
-    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
-}
-
-.resumeLink::before {
-    display: none;
-}
-
-.resumeLink::after {
-    display: none;
+    margin: 0 0 20px 0;
 }
 
 .resumeArea img {
     opacity: 1;
-    height: 45px;
-    top: 4px;
-    right: 41px;
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    transform: translate3d(0,-50%,0);
+}
+
+.resumeLink {
+    height: 25px;
 }
 
 /* SKILLS SECTION */
@@ -387,38 +394,19 @@
 }
 
 .skillText {
-    margin: 0 0 50px 0;
+    margin-bottom: 50px;
     width: 100%;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .skillText h2 {
-    margin: 0 0 30px 0;
-    padding: 0;
-    display: flex;
-    font-size: 40px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: none;
     text-align: center;
-    background: -webkit-linear-gradient(left, #8bdda2, #79c48e);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .skillText p {
-    padding: 0;
-    width: 95%;
-    font-size: 20px;
-    font-weight: 400;
     text-align: center;
-    line-height: 1.5em;
-    background: -webkit-linear-gradient(left, #3a3a3a, #9b9b9b, #7a7a7a);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .skillLine {
@@ -445,26 +433,6 @@
 
 /* CONTACT ME SECTION */
 
-.contact h2 {
-    margin: 0 0 30px 0;
-    padding: 0;
-    font-size: 40px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: none;
-    text-align: center;
-    background: -webkit-linear-gradient(left, #8bdda2, #79c48e);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.contact p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5em;
-    text-align: center;
-}
 
 .contactForm {
     width: 100%;
@@ -478,22 +446,29 @@
     letter-spacing: 1px;
 }
 
+.contactText h2,
+.contactText p {
+    text-align: center;
+}
+
 .inputType1 {
     width: 48%;
 }
 
 .sendButton {
     margin-bottom: 90px;
-    padding: 10px 30px;
+    padding: 10px 35px;
     height: 40px;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: initial;
+    background: #a7f0bc;
 }
 
 .sendButton::before {
-    display: none;
+    opacity: 1;
+    right: 8px;
+    transform: translate3d(0,-50%,0); 
 }
 
 /* FOOTER */

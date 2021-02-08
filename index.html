@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,29 +71,43 @@
                         <p>Coder who focuses on writing clean, semantics and efficient code.</p>
                     </div>
                 </div>
-                <div class="aboutMeFrame" data-animation="bottom">
+                <div class="aboutMeFrame" data-animation="inFront">
                     <img src="images/frame.svg" alt="front end frame SVG">
                 </div>
             </section>
             
             <section class="portfolio" id="thirdSection">
-                <h2 data-animation="bottom">Some Of My Last Work</h3>
-                    <div class="viewCard viewCardRight">
-                        <p class="pRight" data-animation="inFront">Web app developed for my photographic professional portfolio</p>
-                        <a href="https://felipesoliver.github.io/fsoliveira.github.io/" target="blank" data-animation="behind"><img src="images/fsoliveira.png" alt="Cut of the index page from www.fsoliveira.com"></a>
+                <h2 data-animation="bottom">Some Of My Last Work</h2>
+                <div class="viewCard" data-animation="behind">
+                    <img src="images/fsoliveirabg.jpg" alt="Cutout from fsoliveira.com webpage">
+                    <div class="viewCardContent">
+                        <div class="viewCardText">
+                            <h3>Fsolivera.com</h3>
+                            <span>/ Front-end / Website / Portfolio</span>
+                            <p>Web app developed for my photographic professional portfolio</p>
+                        </div>
+                        <a href="https://felipesoliver.github.io/fsoliveira.github.io/" target="blank">Visit Website</a>
                     </div>
-                <div class="viewCard viewCardLeft">
-                    <a href="https://felipesoliver.github.io/naprates-confeitaria.github.io/" target="blank" data-animation="behind"><img src="images/naprates.png" alt="Cut of the index page from naprates project"></a>
-                    <p class="pLeft" data-animation="inFront">Web app developed for Ná Prates' brand</p>
                 </div>
-                <div class="resumeArea" data-animation="inFront">
+                <div class="viewCard" data-animation="behind">
+                    <img src="images/napratesbg.jpg" alt="Cutout from naprates.com webpage">
+                    <div class="viewCardContent">
+                        <div class="viewCardText">
+                            <h3>Náprates.com</h3>
+                            <span>/ Front-end / Website</span>
+                            <p>Web app developed for Ná Prates' brand</p>
+                        </div>
+                        <a href="https://felipesoliver.github.io/naprates-confeitaria.github.io/" target="blank">Visit Website</a>
+                    </div>
+                </div>
+                <div class="resumeArea" data-animation="behind">
                     <a href="https://drive.google.com/u/1/uc?id=1JsUERXy3GwOVtnX9Mj8g9YqlUKFsd1uv&export=download" class="resumeLink" target="blank">Download resumé</a>
                     <img src="images/resume_icon.svg" alt="Resumé Icon">
                 </div>
             </section>
             
             <section class="skills" id="fourthSection">
-                <div class="skillText" data-animation="left">
+                <div class="skillText" data-animation="right">
                     <h2>My Skills</h2>
                     <p>Skills with the following technologies:</p>
                 </div>
@@ -166,14 +180,14 @@
             </section>
             
             <section class="contact" id="fifthSection">
-                <div class="contactText" data-animation="left">
+                <div class="contactText" data-animation="right">
                     <h2>Let's Talk?</h2>
                     <p>
                         Did you get interested about my job? You can get in touch with me filling the form bellow:
                     </p>
                 </div>
                 <div class="containerForm">
-                    <form action="send.php" method="post" name="form" class="contactForm" data-animation="right">
+                    <form action="send.php" method="post" name="form" class="contactForm" data-animation="left">
                         <input type="text" name="firstname" class="inputType1" placeholder="First Name">
                         <input type="text" name="lastname" class="inputType1" placeholder="Last Name">
                         <input type="email" name="email" class="inputType2" placeholder="E-mail">

@@ -5,7 +5,7 @@ function increaseHideMenuInit() {
     const navBar = document.querySelector('.container');
     function increaseNavBar() {
         
-        if(window.pageYOffset > 0){
+        if(window.pageYOffset > 50){
             navBar.classList.add('increased');
         } else {
             navBar.classList.remove('increased');
@@ -44,7 +44,7 @@ function backTopBtnInit() {
             backTopBtn.classList.remove('activated');
         }
         
-        if(scroller >= 2740 && window.innerWidth >= mobileWidth) {
+        if(scroller >= 2975 && window.innerWidth >= mobileWidth) {
             backTopBtn.classList.add('joined');
         } else {
             backTopBtn.classList.remove('joined');
