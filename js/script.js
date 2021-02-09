@@ -5,7 +5,7 @@ function increaseHideMenuInit() {
     const navBar = document.querySelector('.container');
     function increaseNavBar() {
         
-        if(window.pageYOffset > 50){
+        if(window.pageYOffset > 100){
             navBar.classList.add('increased');
         } else {
             navBar.classList.remove('increased');
