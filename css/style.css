@@ -63,6 +63,39 @@ main {
     }
 }
 
+@keyframes shakeLevel {
+    0%{
+        -webkit-transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+    }
+    25%{
+        -webkit-transform: translate(5px,-50%);
+        -moz-transform: translate(5px,-50%);
+        -ms-transform: translate(5px,-50%);
+        transform: translate(5px,-50%);
+    }
+    50%{
+        -webkit-transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+    }
+    75%{
+        -webkit-transform: translate(8px,-50%);
+        -moz-transform: translate(8px,-50%);
+        -ms-transform: translate(8px,-50%);
+        transform: translate(8px,-50%);
+    }
+    100%{
+        -webkit-transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+    }
+}
+
 /* SCROLLBAR */
 
 ::-webkit-scrollbar{
@@ -571,12 +604,18 @@ main {
 }
 
 .viewCardText {
-    width: 90%;
+    width: 100%;
     height: fit-content;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+}
+
+.viewCard h3,
+.viewCard span,
+.viewCard p {
+    text-align: center;
 }
 
 .viewCard h3 {
@@ -584,10 +623,7 @@ main {
     width: 100%;
     font-size: 28px;
     font-weight: 800;
-    background: -webkit-linear-gradient(45deg, #7bec9b, #52b16d, #568865);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #64d885;
 }
 
 .viewCard span {
@@ -599,7 +635,7 @@ main {
 }
 
 .viewCard p {
-    width: 100%;
+    width: 90%;
     font-size: 14px;
     line-height: 1.5em;
 }
@@ -633,29 +669,14 @@ main {
 }
 
 .viewCard a::after {
-    opacity: 0;
     content: '\279C';
     position: absolute;
     top: 50%;
+    transform: translate(0,-50%);
     right: 15px;
     font-size: 18px;
     color: #fff;
-    -webkit-transform: translate(-20px,-50%);
-    -moz-transform: translate(-20px,-50%);
-    -ms-transform: translate(-20px,-50%);
-    transform: translate(-20px,-50%);
-    -webkit-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1) 0ms;
-    -moz-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1) 0ms;
-    -ms-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1) 0ms;
-    transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1) 0ms;
-}
-
-.viewCard a:hover::after {
-    opacity: 1;
-    -webkit-transform: translate(0,-50%);
-    -moz-transform: translate(0,-50%);
-    -ms-transform: translate(0,-50%);
-    transform: translate(0,-50%);
+    animation: shakeLevel 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 }
 
 .resumeArea {
@@ -967,25 +988,15 @@ main {
 
 .sendButton::before {
     content: '\279C';
-    opacity: 0;
     position: absolute;
     top: 50%;
     right: 15px;
     font-size: 18px;
     color: #fff;
-    -webkit-transform: translate(-30px,-50%);
-    -moz-transform: translate(-30px,-50%);
-    transform: translate(-30px,-50%); 
-    -webkit-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1) 0ms;
-    -moz-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1) 0ms;
-    transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1) 0ms;   
-}
-
-.sendButton:hover::before {
-    opacity: 1;
     -webkit-transform: translate(0,-50%);
     -moz-transform: translate(0,-50%);
     transform: translate(0,-50%); 
+    animation: shakeLevel 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;  
 }
 
 /* FOOTER */
