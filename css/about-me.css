@@ -1,0 +1,166 @@
+/* ABOUT ME SECTION */
+
+.aboutMe {
+    margin: 5em auto 1.5em auto;
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeProfile {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #5c5c5c;
+    position: relative;
+}
+
+.aboutMePic {
+    padding: 0 0 40px 0;
+    width: 266px;
+    height: 266px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.aboutMePic img{
+    width: 266px;
+    height: 266px;
+    border-radius: 50%;
+    -webkit-transform: perspective(100px) translate3d(0,0,0);
+    -moz-transform: perspective(100px) translate3d(0,0,0);
+    transform: perspective(100px) translate3d(0,0,0);
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    box-sizing: border-box;
+}
+
+.aboutMePic:hover img {
+    -webkit-transform: perspective(100px) translate3d(0,0,5px);
+    -moz-transform: perspective(100px) translate3d(0,0,5px);
+    transform: perspective(100px) translate3d(0,0,5px);
+}
+
+.aboutMePic .img::after {
+    content: '';
+    width: 266px;
+    height: 266px;
+    position: absolute;
+    top: -16px;
+    left: -15px;
+    border: solid 15px #fff;
+    border-radius: 50%;
+}
+
+.aboutMePic .spinner {
+    display: block;
+    width: 294px;
+    height: 294px;
+    position: absolute;
+    top: -14.5px;
+    left: -14px;
+    border: solid 7px #8fcca2;
+    border-right-color: #d4d4d4;
+    border-bottom-color: #d4d4d4;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    z-index: 1;
+}
+
+.aboutMePic:hover .spinner {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.aboutMePic .info {
+    opacity: 0;
+    width: 266px;
+    height: 266px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    font-weight: lighter;
+    color: #fff;
+    letter-spacing: 3px;
+    background-color: rgba(63, 63, 63, 0.616);
+    border-radius: 50%;
+    box-sizing: border-box;
+    -webkit-transform: perspective(100px) translate3d(0,0,-20px);
+    -moz-transform: perspective(100px) translate3d(0,0,-20px);
+    transform: perspective(100px) translate3d(0,0,-20px);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    cursor: default;
+}
+
+.aboutMePic:hover .info {
+    opacity: 1;
+    -webkit-transform: perspective(100px) translate3d(0,0,0);
+    -moz-transform: perspective(100px) translate3d(0,0,0);
+    transform: perspective(100px) translate3d(0,0,0);
+}
+
+.aboutMePic hr {
+    width: 230px;
+}
+
+.aboutMeTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeTitle h2 {
+    margin: 0 0 30px 0;
+    font-family: 'courier', serif;
+    font-size: 2em;
+    font-weight: 600;
+    background: -webkit-linear-gradient(left, #3a3a3a, #b6b6b6, #7a7a7a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.aboutMePhrase {
+    width: 60%;
+    font-family: 'courier', serif;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.aboutMeFrame {
+    padding: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+}
+
+.aboutMeFrame img {
+    width: 80%;
+}

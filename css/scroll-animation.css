@@ -1,0 +1,37 @@
+/* SCROLL ANIMATION */
+
+[data-animation] {
+    opacity: 0;
+    -webkit-transition: .8s cubic-bezier(0.215, 0.610, 0.355, 1) 0ms;
+    -moz-transition: .8s cubic-bezier(0.215, 0.610, 0.355, 1) 0ms;
+    transition: .8s cubic-bezier(0.215, 0.610, 0.355, 1) 0ms;
+}
+
+[data-animation="right"]{
+    transform: translate3d(-30px,0,0);
+}
+
+[data-animation="left"]{
+    transform: translate3d(30px,0,0);
+}
+
+[data-animation="top"]{
+    transform: translate3d(0,-30px,0);
+}
+
+[data-animation="bottom"]{
+    transform: translate3d(0,30px,0);
+}
+
+[data-animation="inFront"]{
+    transform: perspective(100px) translate3d(0,0,30px);
+}
+
+[data-animation="behind"]{
+    transform: perspective(100px) translate3d(0,0,-30px);
+}
+
+[data-animation].animate {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}

@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.paraxify {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
