@@ -37,8 +37,8 @@
 - [x] Portfolio links and resumé
 - [x] Responsive design 
 - [ ] Contact form front n' back end settings
-- [ ] SEO improvements
-- [ ] First release launchment
+- [x] SEO improvements
+- [x] First release launchment
 
 
 
