@@ -1,4 +1,4 @@
-# felipesdev.github.io
+# felipesdev
 
 
 
@@ -19,7 +19,7 @@
 * [About](#about)
 * [Project Status](#project-status)
 * [Roadmap](#roadmap)
-* [App Demo](#app-demo)
+* [Website Demo](#website-demo)
 * [License](#license)
 * [Author](#author)
 
@@ -42,7 +42,7 @@
 
 
 
-## App Demo
+## Website Demo
 
 #### &#128421; Desktop Version 
 
