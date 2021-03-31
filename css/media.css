@@ -1,3 +1,28 @@
+/* WELCOME PAGE */
+
+.logo {
+    font-size: 16px;
+}
+
+.prefix {
+    width: 42%;
+    animation: slideResposive 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards 0ms;
+}
+
+.suffix {
+    margin-right: 0;
+    width: 58%;
+}
+
+.suffix,
+.dot {
+    margin-left: 5px;
+}
+
+.dot {
+    font-weight: 500;
+}
+
 /* NAVIGATION MENU */
 
 .menu-btn {
