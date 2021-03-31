@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: #fff;
     z-index: 200;
@@ -25,7 +25,7 @@
     justify-content: center;
     font-size: 46px;
     font-weight: 500;
-    color: #92e3a9;
+    color: #b3b3b3;
 }
 
 .prefix {
@@ -46,7 +46,7 @@
     align-items: center;
     justify-content: flex-start;
     font-weight: 200;
-    animation: slideRight .8s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards 2s;
+    animation: slideRight 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards 2s;
 }
 
 .suffix,

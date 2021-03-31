@@ -5,6 +5,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     animation: fadeIn 0.7s ease-in-out;
+    overflow-y: hidden;
 }
 
 main {
