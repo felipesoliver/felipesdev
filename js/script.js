@@ -5,6 +5,7 @@ import burgerMenuInit from './modules/burger-menu.js';
 import * as typeit from './modules/typeit.js';
 import typeWriterInit from './modules/typewriter.js';
 import welcomePageInit from './modules/welcome-page.js';
+import counterInit from './modules/counter.js';
 
 increaseHideMenuInit();
 backTopBtnInit();
@@ -12,3 +13,4 @@ AOSInit();
 burgerMenuInit();
 typeWriterInit();
 welcomePageInit();
+counterInit();

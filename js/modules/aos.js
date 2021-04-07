@@ -22,7 +22,7 @@ export default function AOSInit() {
         target.forEach((element) => {
             if((windowTop) > element.offsetTop) {
                 element.classList.add(animationClass);
-            }else{
+            }else if(element.classList.contains(animationClass)) {
                 element.classList.remove(animationClass);
             }
         });

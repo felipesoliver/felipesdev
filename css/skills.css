@@ -72,8 +72,6 @@
 .skillCard img {
     width: 40%;
     fill: #b6b6b6;
-    animation: scale .5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms forwards;
-    animation-delay: 1s;
 }
 
 .skillCard p {
@@ -106,38 +104,51 @@
     position: relative;
 }
 
-.pBar1 {
+.pBar1,
+.pBar2,
+.pBar3,
+.pBar4,
+.pBar5,
+.pBar6,
+.pBar7,
+.pBar8,
+.pBar9 {
+    width: 0;
+    transition: all 2.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.pBar1.active {
     width: 60%;
 }
 
-.pBar2 {
+.pBar2.active {
     width: 60%;
 }
 
-.pBar3 {
+.pBar3.active {
     width: 50%;
 }
 
-.pBar4 {
+.pBar4.active {
     width: 55%;
 }
 
-.pBar5 {
+.pBar5.active {
     width: 60%;
 }
 
-.pBar6 {
+.pBar6.active {
     width: 40%;
 }
 
-.pBar7 {
+.pBar7.active {
     width: 35%;
 }
 
-.pBar8 {
+.pBar8.active {
     width: 60%;
 }
 
-.pBar9 {
+.pBar9.active {
     width: 60%;
 }
