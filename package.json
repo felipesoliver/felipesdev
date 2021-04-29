@@ -2,7 +2,7 @@
   "name": "projeto-iii-resume",
   "version": "1.0.0",
   "description": "> Web app created for showing my front end developer **skills** information and **resumé**",
-  "main": "index.js",
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/felipesoliver/felipesdev.github.io#readme",
   "devDependencies": {
+    "css-loader": "^5.2.4",
+    "style-loader": "^2.0.0",
     "webpack": "^5.36.0",
     "webpack-cli": "^4.6.0"
   }
