@@ -1,1 +1,10 @@
-node_modules
+node_modules/
+aos.js
+back-top-btn.js
+burger-menu.js
+counter.js
+increase-hide-menu.js
+script.js
+typeit.js
+typewriter.js
+welcome-page.js
