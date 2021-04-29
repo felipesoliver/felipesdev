@@ -46,11 +46,11 @@
 
 #### &#128421; Desktop Version 
 
-> ![Desktop Version](/assets/desktop-version.gif)
+> ![Desktop Version](src/assets/desktop-version.gif)
 
 #### &#128241; Mobile Version 
 
-> ![Mobile Version](/assets/mobile-version.gif)
+> ![Mobile Version](src/assets/mobile-version.gif)
 
 
 
@@ -64,7 +64,7 @@ MIT © [FelipeSOliver](/LICENSE.md)
 
 ## Author
 
-<img src="assets/profilepic.jpg" width="150px">
+<img src="src/assets/profilepic.jpg" width="150px">
 
 Developed with &#10084; by Felipe Oliveira 
 
