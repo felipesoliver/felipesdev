@@ -1,1 +1,11 @@
 node_modules/
+src/js/aos.js
+src/js/back-top-btn.js
+src/js/burger-menu.js
+src/js/counter.js
+src/js/increase-hide-menu.js
+src/js/script.js
+src/js/typeit.js
+src/js/typewriter.js
+src/js/welcome-page.js
+webpack.config.js
