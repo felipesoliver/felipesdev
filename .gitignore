@@ -9,3 +9,4 @@ src/js/typeit.js
 src/js/typewriter.js
 src/js/welcome-page.js
 webpack.config.js
+src/css/
