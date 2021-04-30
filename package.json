@@ -4,7 +4,8 @@
   "description": "> Web app created for showing my front end developer **skills** information and **resumé**",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production --config webpack.config.js",
+    "dev": "webpack --mode development --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/felipesoliver/felipesdev.github.io#readme",
   "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
     "style-loader": "^2.0.0",
     "webpack": "^5.36.0",
