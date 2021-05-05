@@ -1,0 +1,117 @@
+/* CONTACT SECTION */
+
+.contact {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contactText {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactText h2 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: none;
+    background: -webkit-linear-gradient(left, #8bdda2, #79c48e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactText p {
+    padding: 0 0 50px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5em;
+    background: -webkit-linear-gradient(left, #acacac, #8d8d8d, #6b6b6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.containerForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactForm {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contactForm input, .contactForm textarea {
+    margin: 0 0 15px 0;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 300;
+    box-sizing: border-box;
+    border: solid 1px #92e9ab;
+    border-radius: 6px;
+    outline: none;
+    resize: none;
+    color: #7a7a7a;
+}
+
+.inputType1 {
+    width: 49%;
+}
+
+.inputType2 {
+    width: 100%;
+}
+
+.sendButton {
+    position: relative;
+    margin-bottom: 50px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background: #7bec9b;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-box-shadow: 0 3px 6px 0 #20212427;
+    -moz-box-shadow: 0 3px 6px 0 #20212427;
+    box-shadow: 0 3px 6px 0 #20212427;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.sendButton:hover {
+    background: #64d885; 
+    -webkit-box-shadow: 0 4px 6px 0 rgba(17, 17, 19, 0.28);
+    -moz-box-shadow: 0 4px 6px 0 rgba(17, 17, 19, 0.28);
+    box-shadow: 0 4px 6px 0 rgba(17, 17, 19, 0.28);
+}
+
+.sendButton:active {
+    outline: none;
+}
+
+.sendButton::before {
+    content: '\279C';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    font-size: 18px;
+    color: #fff;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    transform: translate(0,-50%); 
+    animation: shakeLevel 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;  
+}

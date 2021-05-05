@@ -1,0 +1,154 @@
+/* SKILLS SECTION */
+
+.skills {
+    margin: 100px auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillText {
+    width: 40%;
+}
+
+.skillText h2 {
+    margin: 0 0 10px 0;
+    width: fit-content;
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: none;
+    text-align: left;
+    background: -webkit-linear-gradient(left, #8bdda2, #79c48e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skillText p {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5em;
+    background: -webkit-linear-gradient(45deg, #acacac, #8d8d8d, #6b6b6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skillLine {
+    width: 2px;
+    height: 300px;
+    border: none;
+    background: #92e9ab;
+}
+
+.skillBoard {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skillCard {
+    margin: 0 0 25px 0;
+    width: 30%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, #aaf1c1, #aaf1c1, #b9fff9 130%);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+    -moz-box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+}
+
+.skillCard img {
+    width: 40%;
+    fill: #b6b6b6;
+}
+
+.skillCard p {
+    padding: 18px 0;
+    width: 100%;
+    font-size: .9em;
+    text-align: center;
+    background: -webkit-linear-gradient(left, #acacac, #8d8d8d, #6b6b6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skillCard span {
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #fff;
+    -webkit-text-shadow: 2px 2px 3px #adadad;
+    -moz-text-shadow: 2px 2px 3px #adadad;
+    text-shadow: 2px 2px 3px #adadad;
+}
+
+.progressBar {
+    height: 5px;
+    border: none;
+    background: linear-gradient(to right, #ccc, #fff, #fff 130%);
+    position: relative;
+}
+
+.pBar1,
+.pBar2,
+.pBar3,
+.pBar4,
+.pBar5,
+.pBar6,
+.pBar7,
+.pBar8,
+.pBar9 {
+    width: 0;
+    transition: all 2.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.pBar1.active {
+    width: 60%;
+}
+
+.pBar2.active {
+    width: 60%;
+}
+
+.pBar3.active {
+    width: 50%;
+}
+
+.pBar4.active {
+    width: 55%;
+}
+
+.pBar5.active {
+    width: 60%;
+}
+
+.pBar6.active {
+    width: 40%;
+}
+
+.pBar7.active {
+    width: 35%;
+}
+
+.pBar8.active {
+    width: 60%;
+}
+
+.pBar9.active {
+    width: 60%;
+}
